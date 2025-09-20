@@ -11,13 +11,13 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center flex-col overflow-hidden bg-white">
+    <main className="flex justify-center items-center flex-col overflow-hidden bg-white" >
       <Navbar navItems={[
-        {name: 'Home', link: '#hero', icon: <FaHome color="white" />},
-        {name: 'Projects', link: '#projects', icon: <FaLaptopCode color="white" />},
-        {name: 'Awards', link: '#awards', icon: <FaTrophy color="white" />},
+        {name: 'Home', link: '#hero', icon: <FaHome color="dark-gray" />},
+        {name: 'Projects', link: '#projects', icon: <FaLaptopCode color="dark-gray" />},
+        {name: 'Awards', link: '#awards', icon: <FaTrophy color="dark-gray" />},
       ]}/>
-      <Hero />
+      <Hero/>
       <WavyBackground 
       className="max-w-4xl mx-auto"
       backgroundFill='white'
@@ -36,7 +36,7 @@ export default function Home() {
       speed="fast"
       />
       <Awards />
-      <Testimonials />
+      <Testimonials/>
     </main>
   );
 }

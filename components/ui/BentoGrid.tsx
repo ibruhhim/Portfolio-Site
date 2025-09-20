@@ -37,7 +37,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "mx-auto grid pb-36 max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-3",
+        "mx-auto grid pb-36 max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-2 lg:grid-cols-3",
         className,
       )}
     >
@@ -126,7 +126,7 @@ export const BentoGridItem = ({
 
    
     {id == 1 && 
-    <div className="flex flex-wrap gap-4 p-6 basis-4/5">
+    <div className="flex flex-wrap gap-4 p-6 basis-[99%]">
       {technologies.map((tech, index) => {
         const Icon = tech.icon;
         return (

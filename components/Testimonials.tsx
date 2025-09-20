@@ -4,7 +4,7 @@ import testimonials from '@/data/testimonialData'
 
 const Testimonials = () => {
   return (
-    <div className='bg-black w-full'>
+    <div className='bg-black w-full' >
       <AnimatedTestimonials testimonials={testimonials}/>
     </div>
   )

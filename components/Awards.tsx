@@ -44,7 +44,7 @@ const Awards = () => {
               <p className="text-gray-100 italic">
                 {award.issuer} • {award.year}
               </p>
-              <p className="mt-3 text-gray-300">{award.description}</p>
+              <p className="mt-3 leading-6 text-gray-300">{award.description}</p>
             </div>
           ))}
         </div>

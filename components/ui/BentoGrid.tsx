@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
-import { FaPython, FaJs, FaReact, FaJava, FaClipboard, FaCopy, FaArrowUp, FaEnvelope, FaCanadianMapleLeaf, FaRegCopy, FaRegClone } from 'react-icons/fa';
+import { FaPython, FaJs, FaReact, FaJava, FaArrowUp, FaCanadianMapleLeaf, FaRegClone } from 'react-icons/fa';
 import { 
   SiNextdotjs, 
   SiMongodb, 

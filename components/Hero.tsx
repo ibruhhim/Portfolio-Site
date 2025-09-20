@@ -3,7 +3,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { Spotlight } from './ui/Spotlight'
-import { WavyBackground } from './ui/WavyBG'
 import { TypewriterEffect} from './ui/TypewriterEffect'
 import { SocialIcon } from 'react-social-icons'
 import pfp from "@/public/assets/pfp.jpeg";

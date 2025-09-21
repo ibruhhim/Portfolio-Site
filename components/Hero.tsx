@@ -28,9 +28,9 @@ const Hero = () => {
     <div id="hero" className='pt-50 relative bg-black w-full min-h-100 pb-36 text-white'>
       <ShootingStars starColor='white' starHeight={8} starWidth={8} trailColor='pink' maxSpeed={10}/>
       <div>
-        <Spotlight className="-top-40 left-20 sm:left-30 md:left-32 md:-top-20 h-screen" fill="blue" />
-        <Spotlight className="top-5 left-40 sm:left-90 h-[80vh] w-[60vw]" fill="pink" />
-        <Spotlight className="top-28 left-50 sm:left-160 h-[80vh] w-[80vw]" fill="purple"/>
+        <Spotlight className="-top-30 left-0 sm:left-30 md:left-32 md:-top-20 h-screen" fill="blue" />
+        <Spotlight className="top-0 left-0 sm:left-90 h-[80vh] w-[80vw]" fill="pink" />
+        <Spotlight className="top-10 left-30 sm:left-160 h-[80vh] w-[80vw]" fill="purple"/>
       </div>
 
       <div className='flex items-center justify-center gap-36 w-full flex-wrap'>

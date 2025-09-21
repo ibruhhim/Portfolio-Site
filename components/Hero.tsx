@@ -34,12 +34,12 @@ const Hero = () => {
       </div>
 
       <div className='flex items-center justify-center gap-36 w-full flex-wrap'>
-        <div className='w-80 h-80 shadow-[0_0_20px_lightblue] overflow-hidden rounded-full'>
+        <div className='w-72 h-72 sm:w-80 sm:h-80 shadow-[0_0_20px_lightblue] overflow-hidden rounded-full'>
           <div className='w-80 h-80 border-blue-400 border-2 rounded-full mr-20 overflow-hidden flex justify-self-center items-center'>
             <Image
               src={pfp}
               alt="My Photo"
-              className='object-cover w-full h-full'
+              className='object-cover w-full h-full object-left sm:object-center'
             />
           </div>
         </div>

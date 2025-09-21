@@ -126,7 +126,7 @@ export const BentoGridItem = ({
 
    
     {id == 1 && 
-    <div className="flex flex-wrap gap-4 p-6">
+    <div className="flex flex-wrap gap-4 p-6 items-center grow">
       {technologies.map((tech, index) => {
         const Icon = tech.icon;
         return (

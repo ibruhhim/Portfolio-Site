@@ -10,6 +10,7 @@ type Testimonial = {
   name: string;
   designation: string;
   src: string;
+  site: string;
 };
 export const AnimatedTestimonials = ({
   testimonials,
@@ -113,7 +114,7 @@ export const AnimatedTestimonials = ({
             }}
           >
             <h3 className="text-2xl font-bold text-white">
-              {testimonials[active].name}
+              <a className="" href={testimonials[active].site} target="_blank" rel="noopener noreferrer">{testimonials[active].name}</a>
             </h3>
             <p className="text-sm text-neutral-500">
               {testimonials[active].designation}

@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <main className="flex justify-center items-center flex-col overflow-hidden bg-white" >
       <Navbar navItems={[
-        {name: 'Home', link: '#hero', icon: <FaHome color="dark-gray" />},
-        {name: 'Projects', link: '#projects', icon: <FaLaptopCode color="dark-gray" />},
-        {name: 'Awards', link: '#awards', icon: <FaTrophy color="dark-gray" />},
+        {name: 'Home', link: 'hero', icon: <FaHome size={10} color="dark-gray" />},
+        {name: 'Projects', link: 'projects', icon: <FaLaptopCode size={10} color="dark-gray" />},
+        {name: 'Awards', link: 'awards', icon: <FaTrophy size={10} color="dark-gray" />},
       ]}/>
       <Hero/>
       <WavyBackground 

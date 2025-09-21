@@ -61,16 +61,22 @@ export const Navbar = ({
         )}
       >
         {navItems.map((navItem, idx) => (
-          <a
-            key={`link=${idx}`}
-            href={navItem.link}
-            className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-            )}
-          >
+        <button
+          key={`link=${idx}`}
+          onClick={(e) => {
+            e.preventDefault();
+            const el = document.getElementById(navItem.link);
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className={cn(
+            "relative items-center flex transition duration-200 space-x-1 text-gray-700 hover:text-gray-500 hover:-translate-y-0.5"
+          )}
+  >
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className="hidden sm:block text-sm">{navItem.name}</span>
-          </a>
+          </button>
         ))}
       </motion.div>
     </AnimatePresence>

@@ -3,7 +3,7 @@ const aboutGrid = [
     id: 1,
     title: "Tech Stack",
     desc: "Versatile and up-to-date with current technologies.",
-    className: "col-span-1 md:col-span-2 row-span-1 flex-col md:flex-row justify-evenly",
+    className: "col-span-1 md:col-span-2 row-span-2 min-[806px]:row-span-1 flex-col items-start justify-start md:items-center md:flex-row md:justify-evenly",
     img: "",
     imgClass: ""
   },

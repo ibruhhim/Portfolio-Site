@@ -37,7 +37,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "mx-auto grid pb-36 max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-2 lg:grid-cols-3",
+        "mx-auto grid pb-36 max-w-7xl grid-cols-1 gap-4 auto-rows-[18rem] md:grid-cols-2 lg:grid-cols-3",
         className,
       )}
     >
@@ -103,9 +103,9 @@ export const BentoGridItem = ({
         href="/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex shadow-lg justify-center items-center px-16 py-8 bg-gray-900 text-white font-semibold text-xl rounded-3xl"
+        className="flex shadow-lg justify-center items-center px-12 py-6 md:px-16 md:py-8 bg-gray-900 text-white font-semibold text-xl rounded-3xl"
       >
-      <FaArrowUp size={25} />
+      <FaArrowUp size={20} />
       </a>
       }
 
@@ -126,11 +126,11 @@ export const BentoGridItem = ({
 
    
     {id == 1 && 
-    <div className="flex flex-wrap gap-4 p-6 basis-[99%]">
+    <div className="flex flex-wrap gap-4 p-6">
       {technologies.map((tech, index) => {
         const Icon = tech.icon;
         return (
-          <div key={index} className="flex items-center text-xs bg-gray-200 shadow-md text-gray-800 font-semibold p-4 rounded-xl">
+          <div key={index} className="flex items-center text-xs bg-gray-200 h-fit shadow-md text-gray-800 font-semibold p-4 rounded-xl">
             <Icon size={25} className="mr-2" color={tech.color} />
             <span>{tech.name}</span>
           </div>

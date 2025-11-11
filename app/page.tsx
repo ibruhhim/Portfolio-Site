@@ -24,9 +24,13 @@ export default function Home() {
       <div className="h-px w-full bg-gradient-to-r from-transparent via-pink-500/30 via-purple-500/30 to-transparent my-8"></div>
       <Grid />
       <Quote/>
-      <Projects />
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-pink-500/30 via-purple-500/30 to-transparent my-8"></div>
-      <Experience />
+      <div className="w-full bg-white py-24 md:py-32">
+        <div className="w-full max-w-[1400px] mx-auto bg-black py-24 md:py-32 rounded-3xl">
+          <Projects />
+          <div className="h-[0.5px] w-full bg-white my-8"></div>
+          <Experience />
+        </div>
+      </div>
       <div className="h-px w-full bg-gradient-to-r from-transparent via-pink-500/30 via-purple-500/30 to-transparent my-8"></div>
       <Awards />
       <Testimonials/>

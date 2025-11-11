@@ -17,7 +17,7 @@
     },
     {
       quote:
-        "Having seen Ibrahim's projects first-hand it is safe to say, he is an extremely capable, adaptable, and agile programmer. Coupled with his excellent teamwork and communication skills; he is sure to be a valuable asset to a team of any caliber.",
+        "Having seen Ibrahim's projects first-hand it is safe to say, he is an extremely capable, adaptable, and agile programmer. He is sure to be a valuable asset to a team of any caliber.",
       name: "Muhammad Jaazib",
       designation: "4th Year Aerospace @ Carelton",
       src: "/assets/muhammad.jpg",

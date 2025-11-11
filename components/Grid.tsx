@@ -1,7 +1,7 @@
-import React from 'react'
-import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
-import { cn } from '@/utils/cn'
-import gridData from '@/data/gridData'
+import React from 'react';
+import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
+import { cn } from '@/utils/cn';
+import gridData from '@/data/gridData';
 
 const Grid = () => {
   return (

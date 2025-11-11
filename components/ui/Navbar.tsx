@@ -1,5 +1,5 @@
 "use client";
-import React, { JSX, useState } from "react";
+import React, { JSX, useState, useEffect } from "react";
 import {
   motion,
   AnimatePresence,
@@ -23,6 +23,11 @@ export const Navbar = ({
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
@@ -40,6 +45,27 @@ export const Navbar = ({
       }
     }
   });
+
+  if (!mounted) {
+    return (
+      <div className={cn(
+        "flex max-w-fit fixed top-6 inset-x-0 mx-auto rounded-full bg-white/95 backdrop-blur-lg shadow-lg border border-gray-100 z-[5000] px-6 py-3 items-center justify-center gap-6 opacity-0 pointer-events-none",
+        className
+      )}>
+        {navItems.map((navItem, idx) => (
+          <button
+            key={`link=${idx}`}
+            className={cn(
+              "relative items-center flex transition-all duration-300 text-sm text-gray-700 hover:text-pink-600 font-medium px-3 py-1.5 rounded-full hover:bg-pink-50"
+            )}
+          >
+            <span className="block sm:hidden">{navItem.icon}</span>
+            <span className="hidden sm:block text-sm">{navItem.name}</span>
+          </button>
+        ))}
+      </div>
+    );
+  }
 
   return (
     <AnimatePresence mode="wait">

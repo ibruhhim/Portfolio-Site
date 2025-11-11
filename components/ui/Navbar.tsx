@@ -56,7 +56,7 @@ export const Navbar = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2  items-center justify-center space-x-4",
+          "flex max-w-fit fixed top-6 inset-x-0 mx-auto rounded-full bg-white/95 backdrop-blur-lg shadow-lg border border-gray-100 z-[5000] px-6 py-3 items-center justify-center gap-6",
           className
         )}
       >
@@ -71,7 +71,7 @@ export const Navbar = ({
             }
           }}
           className={cn(
-            "relative items-center flex transition duration-200 space-x-1 text-gray-700 hover:text-gray-500 hover:-translate-y-0.5"
+            "relative items-center flex transition-all duration-300 text-sm text-gray-700 hover:text-pink-600 font-medium px-3 py-1.5 rounded-full hover:bg-pink-50"
           )}
   >
             <span className="block sm:hidden">{navItem.icon}</span>

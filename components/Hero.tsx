@@ -2,40 +2,16 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Spotlight } from './ui/Spotlight'
-import { TypewriterEffect} from './ui/TypewriterEffect'
-import { SocialIcon } from 'react-social-icons'
 import pfp from "@/public/assets/pfp.jpeg";
-import { ShootingStars } from './ui/ShootingStar';
-
-const words = [
-    {
-      text: "Hi!",
-      className: "text-white text-6xl",
-    },
-    {
-      text: "I'm",
-      className: "text-white text-6xl",
-    },
-    {
-      text: "Ibrahim.",
-      className: "text-blue-500 dark:text-blue-500 text-8xl",
-    },
-  ];
+import SocialButton from './ui/SocialButton';
+import Typewriter from './ui/Typewriter';
 
 const Hero = () => {
   return (
     <div id="hero" className='pt-50 relative bg-black w-full min-h-100 pb-36 text-white'>
-      <ShootingStars starColor='white' starHeight={8} starWidth={8} trailColor='pink' maxSpeed={10}/>
-      <div>
-        <Spotlight className="-top-30 left-0 sm:left-30 md:left-32 md:-top-20 h-screen" fill="blue" />
-        <Spotlight className="top-0 left-0 sm:left-90 h-[80vh] w-[80vw]" fill="pink" />
-        <Spotlight className="top-10 left-30 sm:left-160 h-[80vh] w-[80vw]" fill="purple"/>
-      </div>
-
       <div className='flex items-center justify-center gap-36 w-full flex-wrap'>
-        <div className='relative w-80 h-80 shadow-[0_0_20px_lightblue] overflow-hidden rounded-full'>
-          <div className='absolute w-80 h-80 right-10 border-blue-400 border-2 rounded-full overflow-hidden flex justify-self-center items-center'>
+        <div className='relative w-80 h-80 shadow-[0_0_30px_rgba(236,72,153,0.4)] overflow-hidden rounded-full animate-pulse-slow'>
+          <div className='absolute w-80 h-80 right-10 border-pink-500 border-2 rounded-full overflow-hidden flex justify-self-center items-center'>
             <Image
               src={pfp}
               alt="My Photo"
@@ -45,44 +21,36 @@ const Hero = () => {
         </div>
 
         <div className='flex flex-col items-center leading-16 z-5'>
-          <TypewriterEffect
-          words={words}
-          />
-          <p className='text-lg mt-3'>Coding, creating, and caffeinating.</p>
+          <h1 className="text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center">
+            <span className="text-white text-6xl">Hi! </span>
+            <span className="text-white text-6xl">I'm </span>
+            <span className="text-pink-400 text-8xl">Ibrahim.</span>
+          </h1>
+          <p className='text-lg mt-3 text-gray-300'>
+            <Typewriter 
+              words={['Coding, creating, and caffeinating.', 'Building full-stack applications.', 'Turning ideas into reality.', 'Passionate about technology.']}
+              className="text-pink-400"
+              typingSpeed={80}
+              deletingSpeed={50}
+              pauseTime={2000}
+            />
+          </p>
           
           <div className="flex flex-wrap mt-10 gap-4">
-            {/* GitHub Link */}
-            <button
-              onClick={() => window.open("https://github.com/ibruhhim", "_blank")}
-              className="flex items-center shadow-[inset_0_0_0_2px_#616467] px-8 py-2 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white hover:translate-y-3 dark:text-neutral-200 transition duration-500 cursor-pointer"
-            >
-              <SocialIcon
-                className="pointer-events-none mr-2 max-h-8 max-w-8"
-                fgColor="currentColor"
-                bgColor="transparent"
-                url="https://github.com"
-              />
-              Github
-            </button>
-
-            {/* LinkedIn Link */}
-            <button
-              onClick={() => window.open("https://linkedin.com/in/ibrahim-ellahi", "_blank")}
-              className="flex items-center shadow-[inset_0_0_0_2px_gray] text-black px-10 py-2 rounded-full tracking-widest uppercase font-bold bg-white hover:bg-[#616467] hover:text-black hover:translate-y-3 dark:text-black transition duration-500 cursor-pointer"
-            >
-              <SocialIcon
-                className="pointer-events-none mr-2 max-h-8 max-w-8"
-                fgColor="currentColor"
-                bgColor="transparent"
-                url="https://linkedin.com"
-              />
-              LinkedIn
-            </button>
-
+            <SocialButton
+              url="https://github.com/ibruhhim"
+              label="Github"
+              iconUrl="https://github.com"
+              className="flex items-center border-2 border-pink-500/50 px-8 py-2 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-pink-600 hover:border-pink-600 hover:text-white transition duration-500 cursor-pointer text-white"
+            />
+            <SocialButton
+              url="https://linkedin.com/in/ibrahim-ellahi"
+              label="LinkedIn"
+              iconUrl="https://linkedin.com"
+              className="flex items-center border-2 border-white px-10 py-2 rounded-full tracking-widest uppercase font-bold bg-white text-black hover:bg-purple-600 hover:border-purple-600 hover:text-white transition duration-500 cursor-pointer"
+            />
           </div>
-
         </div>
-
       </div>
     </div>
   )

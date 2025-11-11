@@ -14,7 +14,7 @@ const Grid = () => {
             id={id}
             title={title}
             description={desc}
-            className={cn("bg-black border-2 hover:bg-gray-900 text-white", className)}
+            className={cn("bg-black hover:bg-gray-900 text-white", className)}
             img={img}
             imgClass={imgClass}
             />

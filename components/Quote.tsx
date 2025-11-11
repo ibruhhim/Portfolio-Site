@@ -4,20 +4,31 @@ import Image from 'next/image'
 
 const Quote = () => {
   return (
-    <div className='bg-black flex flex-wrap justify-center items-center w-full p-8 gap-8 mb-36'>
-        <blockquote className="relative text-lg italic border-l-4 border-blue-500 font-extralight pl-4 text-white
-                before:content-['“'] after:content-['”']
-                before:text-3xl before:font-bold after:text-3xl after:font-bold
-                before:mr-1 after:ml-1 text-wrap basis-1/2 leading-8 grow md:grow-0">
-        I&rsquo;m a third-year Computer Science student at UofT with over half a decade of programming experience, passionate about crafting full stack and frontend projects that make a difference.
+    <div className='bg-gradient-to-br from-gray-50 to-white flex flex-col md:flex-row justify-center items-center w-full py-20 px-6 md:px-12 gap-12 mb-36'>
+      <div className='flex-1 max-w-2xl'>
+        <blockquote className="relative text-xl md:text-2xl font-light text-gray-800 leading-relaxed">
+          <div className="flex items-start gap-4">
+            <span className="text-5xl md:text-6xl font-bold text-pink-500 leading-none mt-2">&ldquo;</span>
+            <p className="flex-1 pt-2">
+              I&rsquo;m a third-year Computer Science student at UofT with over half a decade of programming experience, passionate about crafting full stack and frontend projects that make a difference.
+            </p>
+          </div>
+          <div className="flex justify-end mt-4">
+            <span className="text-5xl md:text-6xl font-bold text-purple-500 leading-none">&rdquo;</span>
+          </div>
         </blockquote>
-        <div className='w-48 h-48 sm:w-64 sm:h-64 shadow-[0_0_20px_lightblue] border-blue-400 border-4 rounded-full mr-20 overflow-hidden flex justify-self-center items-center'>
+      </div>
+      <div className='flex-shrink-0'>
+        <div className='w-56 h-56 md:w-72 md:h-72 shadow-2xl border-4 border-pink-500/30 rounded-full overflow-hidden flex items-center justify-center bg-pink-50 p-1'>
+          <div className='w-full h-full rounded-full overflow-hidden'>
             <Image
-            src={pfp2}
-            alt="My Photo"
-            className='object-cover w-full h-full object-right'
+              src={pfp2}
+              alt="My Photo"
+              className='object-cover w-full h-full object-center'
             />
+          </div>
         </div>
+      </div>
     </div>
   )
 }

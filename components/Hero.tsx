@@ -23,7 +23,7 @@ const Hero = () => {
         <div className='flex flex-col items-center leading-16 z-5'>
           <h1 className="text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center">
             <span className="text-white text-6xl">Hi! </span>
-            <span className="text-white text-6xl">I'm </span>
+            <span className="text-white text-6xl">I&aposm </span>
             <span className="text-pink-400 text-8xl">Ibrahim.</span>
           </h1>
           <p className='text-lg mt-3 text-gray-300'>

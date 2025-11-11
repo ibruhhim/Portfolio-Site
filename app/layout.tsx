@@ -15,17 +15,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ibrahim's Portfolio",
   description:
-    "Hi, I'm Ibrahim — a frontend developer passionate about building modern, user-friendly web experiences with Next.js, React, and TypeScript.",
+    "Hi, I'm Ibrahim — a full-stack developer and CS student at UofT. I’m passionate about creating clean, user-focused digital experiences and continuously exploring new ideas in technology and design.",
   keywords: [
     "Ibrahim Ellahi",
     "Ibrahim portfolio",
-    "frontend developer",
+    "full stack developer",
+    "software engineer",
     "web developer",
-    "Next.js",
-    "React",
-    "TypeScript",
+    "CS student",
+    "UofT",
+    "University of Toronto",
+    "frontend",
+    "backend",
     "UI/UX",
-    "JavaScript",
+    "developer portfolio",
+    "digital design",
   ],
   authors: [{ name: "Ibrahim Ellahi" }],
   creator: "Ibrahim Ellahi",
@@ -35,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ibrahim's Portfolio",
     description:
-      "Hi, I'm Ibrahim — a frontend developer passionate about building modern, user-friendly web experiences with Next.js, React, and TypeScript.",
+      "Hi, I'm Ibrahim — a full-stack developer and CS student at UofT. I’m passionate about creating clean, user-focused digital experiences and continuously exploring new ideas in technology and design.",
     url: "https://ibrahimellahi.com",
     siteName: "Ibrahim Ellahi",
     images: [
@@ -43,7 +47,7 @@ export const metadata: Metadata = {
         url: "/assets/pfp.jpeg",
         width: 1200,
         height: 630,
-        alt: "Ibrahim Ellahi — Frontend Developer",
+        alt: "Ibrahim Ellahi — Full-Stack Developer & CS Student at UofT",
       },
     ],
     locale: "en_US",
@@ -55,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ibrahim's Portfolio",
     description:
-      "Hi, I'm Ibrahim — a frontend developer passionate about building modern, user-friendly web experiences with Next.js, React, and TypeScript.",
+      "Hi, I'm Ibrahim — a full-stack developer and CS student at UofT. I’m passionate about creating clean, user-focused digital experiences and continuously exploring new ideas in technology and design.",
     images: ["/assets/pfp.jpeg"],
     creator: "@yourtwitterhandle", // replace with your actual handle if you have one
   },

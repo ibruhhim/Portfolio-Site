@@ -17,7 +17,7 @@ const experiences = [
   {
     id: 2,
     title: "Software Engineer Intern",
-    company: "Wholeviz - Data Visualization Startup",
+    company: "Wholeviz",
     location: "San Francisco, CA",
     startDate: "Sep 2025",
     endDate: "Dec 2025",

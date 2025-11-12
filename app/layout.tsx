@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ibrahim's Portfolio",
   description:
-    "Hi, I'm Ibrahim — a full-stack developer and CS student at UofT. I’m passionate about creating clean, user-focused digital experiences and continuously exploring new ideas in technology and design.",
+    "My name is Ibrahim! I love programming and the world of tech, always discovering new things and exploring the endless possibilities of code. One of my biggest strengths is my passion for bringing ideas to life—I love creating and designing, which is why I enjoy frontend development so much. When I'm not coding, you'll find me appreciating nature and the calming sound of rain, which helps me think and create. Let's connect and build something amazing together!",
   keywords: [
     "Ibrahim Ellahi",
     "Ibrahim portfolio",
@@ -39,12 +39,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ibrahim's Portfolio",
     description:
-      "Hi, I'm Ibrahim — a full-stack developer and CS student at UofT. I’m passionate about creating clean, user-focused digital experiences and continuously exploring new ideas in technology and design.",
+      "My name is Ibrahim! I love programming and the world of tech, always discovering new things and exploring the endless possibilities of code. One of my biggest strengths is my passion for bringing ideas to life—I love creating and designing, which is why I enjoy frontend development so much. When I'm not coding, you'll find me appreciating nature and the calming sound of rain, which helps me think and create. Let's connect and build something amazing together!",
     url: "https://ibrahimellahi.com",
     siteName: "Ibrahim Ellahi",
     images: [
       {
-        url: "/assets/pfp.jpeg",
+        url: "/assets/og-image.png",
         width: 1200,
         height: 630,
         alt: "Ibrahim Ellahi — Full-Stack Developer & CS Student at UofT",
@@ -59,8 +59,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ibrahim's Portfolio",
     description:
-      "Hi, I'm Ibrahim — a full-stack developer and CS student at UofT. I’m passionate about creating clean, user-focused digital experiences and continuously exploring new ideas in technology and design.",
-    images: ["/assets/pfp.jpeg"],
+      "My name is Ibrahim! I love programming and the world of tech, always discovering new things and exploring the endless possibilities of code. One of my biggest strengths is my passion for bringing ideas to life—I love creating and designing, which is why I enjoy frontend development so much. When I'm not coding, you'll find me appreciating nature and the calming sound of rain, which helps me think and create. Let's connect and build something amazing together!",
+    images: ["/assets/og-image.png"],
     creator: "@yourtwitterhandle", // replace with your actual handle if you have one
   },
 

@@ -18,7 +18,7 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-black">About</h3>
-            <p className="text-gray-600 text-sm leading-6">
+            <p className="text-gray-600 text-base md:text-sm leading-6">
               My name is Ibrahim! I love programming and the world of tech, always discovering new things and exploring the endless possibilities of code. One of my biggest strengths is my passion for bringing ideas to life—I love creating and designing, which is why I enjoy frontend development so much. When I&apos;m not coding, you&apos;ll find me appreciating nature and the calming sound of rain, which helps me think and create. Let&apos;s connect and build something amazing together!
             </p>
           </div>
@@ -30,10 +30,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-500 text-base md:text-sm">
               © {currentYear} Ibrahim Ellahi. All rights reserved.
             </p>
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-500 text-base md:text-sm">
               Built with Next.js & Tailwind CSS
             </p>
           </div>

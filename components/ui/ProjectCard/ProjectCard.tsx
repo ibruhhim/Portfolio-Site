@@ -41,25 +41,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {/* Content */}
-      <div className="p-6 md:p-7 flex flex-col flex-1">
-        <div className="mb-4">
-          <h3 className="font-bold text-xl md:text-2xl text-black mb-1 group-hover:text-purple-600 transition-colors duration-300">
+      <div className="p-4 md:p-6 lg:p-7 flex flex-col flex-1">
+        <div className="mb-3 md:mb-4">
+          <h3 className="font-bold text-lg md:text-xl lg:text-2xl text-black mb-1 group-hover:text-purple-600 transition-colors duration-300">
             {title}
           </h3>
-          <p className="text-xs text-gray-500 font-medium">
+          <p className="text-sm md:text-xs text-gray-500 font-medium">
             {subtitle}
           </p>
         </div>
 
-        <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-5 flex-1">
+        <p className="text-base md:text-base text-gray-600 leading-relaxed mb-4 md:mb-5 flex-1">
           {desc}
         </p>
 
         {/* Progress Section */}
         <div className="mb-5">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-semibold text-gray-700">Progress</span>
-            <span className="text-xs font-bold text-gray-700">{progress}%</span>
+            <span className="text-sm md:text-xs font-semibold text-gray-700">Progress</span>
+            <span className="text-sm md:text-xs font-bold text-gray-700">{progress}%</span>
           </div>
           <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
             <div 
@@ -74,7 +74,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {tech.map((t, i) => (
             <span
               key={i}
-              className={`px-3 py-1.5 text-xs font-semibold rounded-full border transition-colors ${COLORS.techBadges[i % COLORS.techBadges.length]}`}
+              className={`px-3 py-1.5 text-sm md:text-xs font-semibold rounded-full border transition-colors ${COLORS.techBadges[i % COLORS.techBadges.length]}`}
             >
               {t}
             </span>
@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.02]"
+          className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white text-base md:text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.02]"
         >
           View Project
           <FaExternalLinkAlt size={12} />

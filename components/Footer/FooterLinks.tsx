@@ -17,7 +17,7 @@ const FooterLinks: React.FC = () => {
           <li key={link.name}>
             <a 
               href={link.href} 
-              className="text-gray-600 hover:text-pink-600 transition-colors text-sm font-medium"
+              className="text-gray-600 hover:text-pink-600 transition-colors text-base md:text-sm font-medium"
             >
               {link.name}
             </a>

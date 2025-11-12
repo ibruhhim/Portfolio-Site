@@ -71,17 +71,17 @@ const AwardCard: React.FC<AwardCardProps> = ({
       {/* Content */}
       <div className="text-center space-y-3">
         <h3 className="text-2xl font-bold text-white group-hover:text-pink-400 transition-colors">{title}</h3>
-        <p className="text-sm text-gray-300 font-semibold">
+        <p className="text-base md:text-sm text-gray-300 font-semibold">
           {issuer}
         </p>
-        <div className={`inline-block px-4 py-1.5 rounded-full bg-gradient-to-r ${getGradient()} text-white text-xs font-bold uppercase tracking-wider shadow-md`}>
+        <div className={`inline-block px-4 py-1.5 rounded-full bg-gradient-to-r ${getGradient()} text-white text-sm md:text-xs font-bold uppercase tracking-wider shadow-md`}>
           {year}
         </div>
       </div>
 
       {/* Description */}
       <div className="border-t border-gray-700 pt-6 mt-2">
-        <p className="text-sm leading-6 text-gray-300 text-center">{description}</p>
+        <p className="text-base md:text-sm leading-6 text-gray-300 text-center">{description}</p>
       </div>
     </div>
   );

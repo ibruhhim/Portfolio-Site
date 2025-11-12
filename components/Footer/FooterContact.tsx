@@ -30,7 +30,7 @@ const FooterContact: React.FC = () => {
             href={contact.href}
             target={contact.href.startsWith('mailto:') ? undefined : "_blank"}
             rel={contact.href.startsWith('mailto:') ? undefined : "noopener noreferrer"}
-            className="flex items-center text-gray-600 hover:text-purple-600 transition-colors text-sm font-medium"
+            className="flex items-center text-gray-600 hover:text-purple-600 transition-colors text-base md:text-sm font-medium"
           >
             {contact.icon}
             {contact.label}

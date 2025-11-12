@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SITE_METADATA } from "@/constants/metadata";
@@ -48,14 +48,17 @@ export const metadata: Metadata = {
     creator: SITE_METADATA.twitter.creator,
   },
 
-  // 👇 Icons and theme
+  // 👇 Icons
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  themeColor: SITE_METADATA.themeColor,
   manifest: "/site.webmanifest",
+};
+
+export const viewport: Viewport = {
+  themeColor: SITE_METADATA.themeColor,
 };
 
 export default function RootLayout({

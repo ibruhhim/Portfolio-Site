@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.02]"
+          className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.02]"
         >
           View Project
           <FaExternalLinkAlt size={12} />

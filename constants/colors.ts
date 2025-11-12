@@ -6,9 +6,9 @@ export const COLORS = {
     pinkPurple: "from-pink-500 to-purple-600",
     purpleViolet: "from-purple-500 to-violet-600",
     violetPink: "from-violet-500 to-pink-600",
-    // Single color shades for experience cards - light pinks
-    pinkShades: "from-pink-400 to-pink-600",
-    purpleShades: "from-purple-400 to-purple-600",
+    // Single color shades for experience cards - pink variations
+    pinkShadesLight: "from-pink-400 to-pink-500",
+    pinkShadesDark: "from-pink-500 to-pink-600",
   },
   techBadges: [
     "bg-pink-50 border-pink-200 text-pink-700 hover:bg-pink-100",

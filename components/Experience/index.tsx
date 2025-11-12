@@ -15,7 +15,7 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="space-y-16 md:space-y-20">
+        <div className="relative space-y-16 md:space-y-20">
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={experience.id}
@@ -24,6 +24,8 @@ const Experience = () => {
               isLast={index === experiences.length - 1}
             />
           ))}
+          {/* Darkness fade at the end */}
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black via-black/50 to-transparent pointer-events-none"></div>
         </div>
       </div>
     </section>

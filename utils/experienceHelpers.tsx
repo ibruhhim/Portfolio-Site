@@ -8,7 +8,7 @@ export const getCompanyIcon = (index: number): React.ReactElement => {
 
 export const getExperienceGradient = (index: number): string => {
   return index % 2 === 0 
-    ? COLORS.gradients.pinkShades
-    : COLORS.gradients.purpleShades;
+    ? COLORS.gradients.pinkShadesLight
+    : COLORS.gradients.pinkShadesDark;
 };
 

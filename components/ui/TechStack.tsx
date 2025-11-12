@@ -26,13 +26,13 @@ const technologies = [
 
 const TechStack: React.FC = () => {
   return (
-    <div className="flex flex-wrap gap-4 p-6 items-center grow">
+    <div className="flex flex-wrap gap-2 md:gap-4 p-4 md:p-6 items-center grow overflow-hidden">
       {technologies.map((tech, index) => {
         const Icon = tech.icon;
         return (
-          <div key={index} className="flex items-center text-xs bg-gray-200 h-fit shadow-md text-gray-800 font-semibold p-4 rounded-xl">
-            <Icon size={25} className="mr-2" color={tech.color} />
-            <span>{tech.name}</span>
+          <div key={index} className="flex items-center text-xs md:text-xs bg-gray-200 h-fit shadow-md text-gray-800 font-semibold p-2 md:p-4 rounded-lg md:rounded-xl">
+            <Icon size={18} className="mr-1.5 md:mr-2 flex-shrink-0" color={tech.color} />
+            <span className="whitespace-nowrap">{tech.name}</span>
           </div>
         );
       })}

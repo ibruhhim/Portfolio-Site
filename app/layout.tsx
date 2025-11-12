@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ibrahim's Portfolio",
   description:
-    "My name is Ibrahim! I love programming and the world of tech, always discovering new things and exploring the endless possibilities of code. One of my biggest strengths is my passion for bringing ideas to life—I love creating and designing, which is why I enjoy frontend development so much. When I'm not coding, you'll find me appreciating nature and the calming sound of rain, which helps me think and create. Let's connect and build something amazing together!",
+    "I'm Ibrahim! I love programming and tech, always discovering new things. My passion is bringing ideas to life through creating and designing, which is why I enjoy frontend development. When I'm not coding, I appreciate nature and the calming sound of rain.",
   keywords: [
     "Ibrahim Ellahi",
     "Ibrahim portfolio",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ibrahim's Portfolio",
     description:
-      "My name is Ibrahim! I love programming and the world of tech, always discovering new things and exploring the endless possibilities of code. One of my biggest strengths is my passion for bringing ideas to life—I love creating and designing, which is why I enjoy frontend development so much. When I'm not coding, you'll find me appreciating nature and the calming sound of rain, which helps me think and create. Let's connect and build something amazing together!",
+      "I'm Ibrahim! I love programming and tech, always discovering new things. My passion is bringing ideas to life through creating and designing, which is why I enjoy frontend development. When I'm not coding, I appreciate nature and the calming sound of rain.",
     url: "https://ibrahimellahi.com",
     siteName: "Ibrahim Ellahi",
     images: [
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ibrahim's Portfolio",
     description:
-      "My name is Ibrahim! I love programming and the world of tech, always discovering new things and exploring the endless possibilities of code. One of my biggest strengths is my passion for bringing ideas to life—I love creating and designing, which is why I enjoy frontend development so much. When I'm not coding, you'll find me appreciating nature and the calming sound of rain, which helps me think and create. Let's connect and build something amazing together!",
+      "I'm Ibrahim! I love programming and tech, always discovering new things. My passion is bringing ideas to life through creating and designing, which is why I enjoy frontend development. When I'm not coding, I appreciate nature and the calming sound of rain.",
     images: ["/assets/og-image.png"],
     creator: "@yourtwitterhandle", // replace with your actual handle if you have one
   },

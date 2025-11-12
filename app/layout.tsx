@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SITE_METADATA } from "@/constants/metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,41 +14,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ibrahim's Portfolio",
-  description:
-    "I'm Ibrahim! I love programming and tech, always discovering new things. My passion is bringing ideas to life through creating and designing, which is why I enjoy frontend development. When I'm not coding, I appreciate nature and the calming sound of rain.",
-  keywords: [
-    "Ibrahim Ellahi",
-    "Ibrahim portfolio",
-    "full stack developer",
-    "software engineer",
-    "web developer",
-    "CS student",
-    "UofT",
-    "University of Toronto",
-    "frontend",
-    "backend",
-    "UI/UX",
-    "developer portfolio",
-    "digital design",
-  ],
-  authors: [{ name: "Ibrahim Ellahi" }],
-  creator: "Ibrahim Ellahi",
-  metadataBase: new URL("https://ibrahimellahi.com"),
+  title: SITE_METADATA.title,
+  description: SITE_METADATA.description,
+  keywords: SITE_METADATA.keywords,
+  authors: [{ name: SITE_METADATA.author }],
+  creator: SITE_METADATA.author,
+  metadataBase: new URL(SITE_METADATA.url),
 
   // 👇 Open Graph metadata for link previews (Facebook, LinkedIn, Discord, etc.)
   openGraph: {
-    title: "Ibrahim's Portfolio",
-    description:
-      "I'm Ibrahim! I love programming and tech, always discovering new things. My passion is bringing ideas to life through creating and designing, which is why I enjoy frontend development. When I'm not coding, I appreciate nature and the calming sound of rain.",
-    url: "https://ibrahimellahi.com",
-    siteName: "Ibrahim Ellahi",
+    title: SITE_METADATA.title,
+    description: SITE_METADATA.description,
+    url: SITE_METADATA.url,
+    siteName: SITE_METADATA.siteName,
     images: [
       {
-        url: "/assets/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Ibrahim Ellahi — Full-Stack Developer & CS Student at UofT",
+        url: SITE_METADATA.ogImage.url,
+        width: SITE_METADATA.ogImage.width,
+        height: SITE_METADATA.ogImage.height,
+        alt: SITE_METADATA.ogImage.alt,
       },
     ],
     locale: "en_US",
@@ -56,12 +41,11 @@ export const metadata: Metadata = {
 
   // 👇 Twitter metadata for link sharing
   twitter: {
-    card: "summary_large_image",
-    title: "Ibrahim's Portfolio",
-    description:
-      "I'm Ibrahim! I love programming and tech, always discovering new things. My passion is bringing ideas to life through creating and designing, which is why I enjoy frontend development. When I'm not coding, I appreciate nature and the calming sound of rain.",
-    images: ["/assets/og-image.png"],
-    creator: "@yourtwitterhandle", // replace with your actual handle if you have one
+    card: SITE_METADATA.twitter.card,
+    title: SITE_METADATA.title,
+    description: SITE_METADATA.description,
+    images: [SITE_METADATA.ogImage.url],
+    creator: SITE_METADATA.twitter.creator,
   },
 
   // 👇 Icons and theme
@@ -70,7 +54,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  themeColor: "#0f172a",
+  themeColor: SITE_METADATA.themeColor,
   manifest: "/site.webmanifest",
 };
 

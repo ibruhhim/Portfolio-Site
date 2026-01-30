@@ -5,7 +5,12 @@ import FooterLinks from './FooterLinks';
 import FooterContact from './FooterContact';
 
 const Footer = () => {
-  const [currentYear, setCurrentYear] = useState(2024);
+  const [currentYear, setCurrentYear] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return new Date().getFullYear();
+    }
+    return new Date().getFullYear();
+  });
   
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
@@ -30,7 +35,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-base md:text-sm">
+            <p className="text-gray-500 text-base md:text-sm" suppressHydrationWarning>
               © {currentYear} Ibrahim Ellahi. All rights reserved.
             </p>
             <p className="text-gray-500 text-base md:text-sm">

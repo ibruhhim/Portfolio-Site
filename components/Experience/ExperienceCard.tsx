@@ -1,12 +1,13 @@
 import React from 'react';
+import Image from 'next/image';
 import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 import { Experience as ExperienceType } from '@/types';
+import { getCompanyIcon } from '@/utils/experienceHelpers';
 import { COLORS } from '@/constants/colors';
-import { getCompanyIcon, getExperienceGradient } from '@/utils/experienceHelpers';
 
 /**
  * ExperienceCard Component
- * Displays a single experience entry with timeline, gradient header, and achievements
+ * LinkedIn-style experience card with company logo or icon
  */
 
 interface ExperienceCardProps {
@@ -15,83 +16,85 @@ interface ExperienceCardProps {
   isLast: boolean;
 }
 
-const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index, isLast }) => {
-  const gradient = getExperienceGradient(index);
+const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) => {
+  const isPink = index % 2 === 0;
+  const gradient = isPink ? 'from-pink-400 to-pink-500' : 'from-purple-400 to-purple-500';
+  const borderColor = isPink ? 'border-pink-400' : 'border-purple-400';
+  const hoverBorderColor = isPink ? 'hover:border-pink-500' : 'hover:border-purple-500';
+  const hoverGlow = isPink ? 'hover:shadow-[0_0_30px_rgba(236,72,153,0.6)]' : 'hover:shadow-[0_0_30px_rgba(147,51,234,0.6)]';
+  const iconBg = isPink ? 'bg-gradient-to-br from-pink-100 to-pink-200' : 'bg-gradient-to-br from-purple-100 to-purple-200';
+  const iconBorder = isPink ? 'border-pink-300' : 'border-purple-300';
+  const iconColor = isPink ? 'text-pink-600' : 'text-purple-600';
+  const calendarColor = isPink ? 'text-pink-500' : 'text-purple-500';
+  const locationColor = isPink ? 'text-pink-500' : 'text-purple-500';
+  const bulletColor = isPink ? 'text-pink-500' : 'text-purple-500';
+  const titleHoverColor = isPink ? 'group-hover:text-pink-600' : 'group-hover:text-purple-600';
+  const companyColor = isPink ? 'text-pink-600' : 'text-purple-600';
 
   return (
-    <div className="relative">
-      {/* Timeline line - hidden on mobile */}
-      {!isLast && (
-        <div className="hidden md:block absolute left-8 md:left-10 top-32 bottom-0 w-0.5 bg-gradient-to-b from-gray-700 via-gray-600 to-transparent"></div>
-      )}
+    <div className={`bg-white border-2 ${borderColor} rounded-xl overflow-hidden shadow-md hover:shadow-xl ${hoverBorderColor} ${hoverGlow} transition-all duration-300 hover:-translate-y-1 group`}>
+      {/* Gradient accent bar */}
+      <div className={`h-1.5 bg-gradient-to-r ${gradient}`}></div>
       
-      <div className="flex gap-6 md:gap-8">
-        {/* Timeline dot with icon - hidden on mobile */}
-        <div className="hidden md:flex flex-shrink-0">
-          <div className={`w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center shadow-xl border-4 border-black transition-all duration-300 hover:scale-110 hover:rotate-3 ${gradient} bg-gradient-to-br`}>
-            <div className="text-white">
-              {getCompanyIcon(index)}
+      <div className="p-5 md:p-6 lg:p-7">
+        <div className="flex gap-4 md:gap-5">
+          {/* Company Logo/Icon - LinkedIn style */}
+          <div className="flex-shrink-0">
+            <div className={`w-14 h-14 md:w-16 md:h-16 rounded-lg ${iconBg} flex items-center justify-center border-2 ${iconBorder} overflow-hidden shadow-md group-hover:scale-110 transition-transform duration-300`}>
+              {experience.logo ? (
+                <Image
+                  src={experience.logo}
+                  alt={`${experience.company} logo`}
+                  width={64}
+                  height={64}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className={iconColor}>
+                  {getCompanyIcon(index)}
+                </div>
+              )}
             </div>
           </div>
-        </div>
 
-        {/* Content */}
-        <div className="flex-1 pb-8 md:pb-12">
-          <div className="bg-white border-2 border-black rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-[0_0_40px_rgba(236,72,153,0.8)] transition-all duration-300 hover:border-pink-500 hover:-translate-y-1">
-            {/* Header with gradient */}
-            <div className={`relative h-28 md:h-32 bg-gradient-to-br ${gradient} p-5 md:p-6 lg:p-8`}>
-              <div className="absolute inset-0 bg-black/10"></div>
-              <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-3 md:gap-4">
-                <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1 md:mb-2">
-                    {experience.title}
-                  </h3>
-                  <p className="text-base md:text-lg lg:text-xl font-semibold text-white/90 mb-2 md:mb-3">
-                    {experience.company}
-                  </p>
-                </div>
-                {/* Icon badge - hidden on mobile */}
-                <div className="hidden md:flex w-14 h-14 rounded-xl bg-white/20 backdrop-blur-sm border-2 border-white/30 items-center justify-center shadow-lg">
-                  <div className="text-white">
-                    {getCompanyIcon(index)}
-                  </div>
-                </div>
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute bottom-4 left-4 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm"></div>
-              <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm"></div>
+          {/* Content */}
+          <div className="flex-1 min-w-0">
+            {/* Title and Company */}
+            <div className="mb-3">
+              <h3 className={`text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-1 transition-colors duration-300 ${titleHoverColor} leading-tight`}>
+                {experience.title}
+              </h3>
+              <p className={`text-base md:text-lg font-semibold ${companyColor} transition-colors duration-300`}>
+                {experience.company}
+              </p>
             </div>
 
-            {/* Content body */}
-            <div className="p-4 md:p-6 lg:p-8 xl:p-10">
-              {/* Date and location */}
-              <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-4 md:mb-6 pb-4 md:pb-6 border-b border-gray-200">
-                <div className="flex items-center gap-2 text-sm md:text-sm text-gray-600">
-                  <FaCalendarAlt className="text-purple-500 flex-shrink-0" size={16} />
-                  <span className="font-semibold">{experience.startDate} – {experience.endDate}</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm md:text-sm text-gray-600">
-                  <FaMapMarkerAlt className="text-pink-500 flex-shrink-0" size={16} />
-                  <span>{experience.location}</span>
-                </div>
+            {/* Date and Location */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4 pb-4 border-b border-gray-200">
+              <div className={`flex items-center gap-2 text-sm md:text-base font-medium ${isPink ? 'text-pink-600' : 'text-purple-600'}`}>
+                <FaCalendarAlt className={`flex-shrink-0 ${calendarColor}`} size={16} />
+                <span>{experience.startDate} – {experience.endDate}</span>
               </div>
+              <span className={`hidden sm:inline text-lg ${isPink ? 'text-pink-300' : 'text-purple-300'}`}>·</span>
+              <div className={`flex items-center gap-2 text-sm md:text-base font-medium ${isPink ? 'text-pink-600' : 'text-purple-600'}`}>
+                <FaMapMarkerAlt className={`flex-shrink-0 ${locationColor}`} size={16} />
+                <span>{experience.location}</span>
+              </div>
+            </div>
 
-              {/* Responsibilities */}
-              <div className="space-y-3 md:space-y-4">
-                <h4 className="text-sm md:text-sm font-bold text-gray-900 uppercase tracking-wide mb-3 md:mb-4">Key Achievements</h4>
-                <ul className="space-y-3 md:space-y-4">
-                  {experience.responsibilities.map((responsibility, idx) => (
-                    <li key={idx} className="flex gap-3 md:gap-4 group/item">
-                      <div className={`flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full ${COLORS.bulletPoints[idx % COLORS.bulletPoints.length]} bg-${COLORS.bulletPoints[idx % COLORS.bulletPoints.length].split('-')[1]}-50 flex items-center justify-center mt-0.5 group-hover/item:scale-110 transition-transform duration-300`}>
-                        <span className={`${COLORS.bulletPoints[idx % COLORS.bulletPoints.length]} text-xs font-bold`}>•</span>
-                      </div>
-                      <p className="text-gray-700 leading-relaxed text-base md:text-base flex-1 group-hover/item:text-gray-900 transition-colors duration-300">
-                        {responsibility}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            {/* Responsibilities */}
+            <div>
+              <h4 className={`text-xs md:text-sm font-bold uppercase tracking-wider mb-3 ${isPink ? 'text-pink-600' : 'text-purple-600'}`}>
+                Key Achievements
+              </h4>
+              <ul className="space-y-3">
+                {experience.responsibilities.map((responsibility, idx) => (
+                  <li key={idx} className="flex gap-3 text-sm md:text-base text-gray-700 leading-relaxed">
+                    <span className={`${bulletColor} mt-1 flex-shrink-0 font-bold text-lg`}>•</span>
+                    <span className="flex-1">{responsibility}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

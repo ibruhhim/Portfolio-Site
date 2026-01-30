@@ -6,6 +6,7 @@ const experiences = [
     location: "Toronto, ON",
     startDate: "Oct 2025",
     endDate: "Mar 2026",
+    logo: "/assets/company-logos/uoft_logo.jpg",
     responsibilities: [
       "Developed and optimized site information structures through detailed sitemaps, user flows, and content model diagrams, improving content clarity and navigation efficiency by an estimated 15-20%.",
       "Managed and updated structured content using TinaCMS integrated with a CoreData-backed database, ensuring consistency and reliability across university web platforms.",
@@ -21,6 +22,7 @@ const experiences = [
     location: "San Francisco, CA",
     startDate: "Sep 2025",
     endDate: "Dec 2025",
+    logo: "/assets/company-logos/wholeviz_logo.jpg",
     responsibilities: [
       "Developed and maintained front-end features for a data visualization platform, including data upload workflows, chart rendering components, and interactive user dashboards.",
       "Built and refined responsive UI elements for the landing page and core product interface, ensuring consistency, scalability, and performance across devices.",

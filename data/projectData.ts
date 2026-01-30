@@ -21,7 +21,7 @@ const projects = [
     desc: "A mobile food delivery application built with React Native and Expo, featuring real-time order tracking, restaurant listings, and seamless payment integration...",
     tech: ["React Native", "Expo", "Tailwind", "Appwrite"],
     icon: "food",
-    progress: 0
+    progress: 78
   },
 ]
 

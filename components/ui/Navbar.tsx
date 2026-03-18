@@ -56,7 +56,7 @@ export const Navbar = ({
           <button
             key={`link=${idx}`}
             className={cn(
-              "relative items-center flex transition-all duration-300 text-sm text-gray-700 hover:text-pink-600 font-medium px-3 py-1.5 rounded-full hover:bg-pink-50"
+              "relative items-center flex transition-all duration-300 text-sm text-gray-700 hover:text-emerald-700 font-medium px-3 py-1.5 rounded-full hover:bg-emerald-50"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
@@ -97,7 +97,7 @@ export const Navbar = ({
             }
           }}
           className={cn(
-            "relative items-center flex transition-all duration-300 text-sm text-gray-700 hover:text-pink-600 font-medium px-3 py-1.5 rounded-full hover:bg-pink-50"
+            "relative items-center flex transition-all duration-300 text-sm text-gray-700 hover:text-emerald-700 font-medium px-3 py-1.5 rounded-full hover:bg-emerald-50"
           )}
   >
             <span className="block sm:hidden">{navItem.icon}</span>

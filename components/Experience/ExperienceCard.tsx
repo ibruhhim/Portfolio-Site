@@ -17,19 +17,19 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) => {
-  const isPink = index % 2 === 0;
-  const gradient = isPink ? 'from-pink-400 to-pink-500' : 'from-purple-400 to-purple-500';
-  const borderColor = isPink ? 'border-pink-400' : 'border-purple-400';
-  const hoverBorderColor = isPink ? 'hover:border-pink-500' : 'hover:border-purple-500';
-  const hoverGlow = isPink ? 'hover:shadow-[0_0_30px_rgba(236,72,153,0.6)]' : 'hover:shadow-[0_0_30px_rgba(147,51,234,0.6)]';
-  const iconBg = isPink ? 'bg-gradient-to-br from-pink-100 to-pink-200' : 'bg-gradient-to-br from-purple-100 to-purple-200';
-  const iconBorder = isPink ? 'border-pink-300' : 'border-purple-300';
-  const iconColor = isPink ? 'text-pink-600' : 'text-purple-600';
-  const calendarColor = isPink ? 'text-pink-500' : 'text-purple-500';
-  const locationColor = isPink ? 'text-pink-500' : 'text-purple-500';
-  const bulletColor = isPink ? 'text-pink-500' : 'text-purple-500';
-  const titleHoverColor = isPink ? 'group-hover:text-pink-600' : 'group-hover:text-purple-600';
-  const companyColor = isPink ? 'text-pink-600' : 'text-purple-600';
+  const isPrimary = index % 2 === 0;
+  const gradient = isPrimary ? 'from-emerald-400 to-emerald-500' : 'from-amber-400 to-amber-500';
+  const borderColor = isPrimary ? 'border-emerald-400' : 'border-amber-400';
+  const hoverBorderColor = isPrimary ? 'hover:border-emerald-500' : 'hover:border-amber-500';
+  const hoverGlow = isPrimary ? 'hover:shadow-[0_0_30px_rgba(16,185,129,0.55)]' : 'hover:shadow-[0_0_30px_rgba(245,158,11,0.55)]';
+  const iconBg = isPrimary ? 'bg-gradient-to-br from-emerald-100 to-emerald-200' : 'bg-gradient-to-br from-amber-100 to-amber-200';
+  const iconBorder = isPrimary ? 'border-emerald-300' : 'border-amber-300';
+  const iconColor = isPrimary ? 'text-emerald-700' : 'text-amber-700';
+  const calendarColor = isPrimary ? 'text-emerald-600' : 'text-amber-600';
+  const locationColor = isPrimary ? 'text-emerald-600' : 'text-amber-600';
+  const bulletColor = isPrimary ? 'text-emerald-600' : 'text-amber-600';
+  const titleHoverColor = isPrimary ? 'group-hover:text-emerald-700' : 'group-hover:text-amber-700';
+  const companyColor = isPrimary ? 'text-emerald-700' : 'text-amber-700';
 
   return (
     <div className={`bg-white border-2 ${borderColor} rounded-xl overflow-hidden shadow-md hover:shadow-xl ${hoverBorderColor} ${hoverGlow} transition-all duration-300 hover:-translate-y-1 group`}>
@@ -71,12 +71,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) =>
 
             {/* Date and Location */}
             <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4 pb-4 border-b border-gray-200">
-              <div className={`flex items-center gap-2 text-sm md:text-base font-medium ${isPink ? 'text-pink-600' : 'text-purple-600'}`}>
+              <div className={`flex items-center gap-2 text-sm md:text-base font-medium ${isPrimary ? 'text-emerald-700' : 'text-amber-700'}`}>
                 <FaCalendarAlt className={`flex-shrink-0 ${calendarColor}`} size={16} />
                 <span>{experience.startDate} – {experience.endDate}</span>
               </div>
-              <span className={`hidden sm:inline text-lg ${isPink ? 'text-pink-300' : 'text-purple-300'}`}>·</span>
-              <div className={`flex items-center gap-2 text-sm md:text-base font-medium ${isPink ? 'text-pink-600' : 'text-purple-600'}`}>
+              <span className={`hidden sm:inline text-lg ${isPrimary ? 'text-emerald-300' : 'text-amber-300'}`}>·</span>
+              <div className={`flex items-center gap-2 text-sm md:text-base font-medium ${isPrimary ? 'text-emerald-700' : 'text-amber-700'}`}>
                 <FaMapMarkerAlt className={`flex-shrink-0 ${locationColor}`} size={16} />
                 <span>{experience.location}</span>
               </div>
@@ -84,7 +84,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) =>
 
             {/* Responsibilities */}
             <div>
-              <h4 className={`text-xs md:text-sm font-bold uppercase tracking-wider mb-3 ${isPink ? 'text-pink-600' : 'text-purple-600'}`}>
+              <h4 className={`text-xs md:text-sm font-bold uppercase tracking-wider mb-3 ${isPrimary ? 'text-emerald-700' : 'text-amber-700'}`}>
                 Key Achievements
               </h4>
               <ul className="space-y-3">

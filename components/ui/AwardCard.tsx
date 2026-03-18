@@ -57,7 +57,7 @@ const AwardCard: React.FC<AwardCardProps> = ({
   };
 
   return (
-    <div className={`bg-black border-2 ${getBorderColor()} flex flex-col gap-6 text-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 w-full sm:max-w-sm hover:-translate-y-2 hover:border-pink-500/50 ${getHoverGlow()}`}>
+    <div className={`bg-black border-2 ${getBorderColor()} flex flex-col gap-6 text-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 w-full sm:max-w-sm hover:-translate-y-2 hover:border-emerald-500/50 ${getHoverGlow()}`}>
       {/* Icon with gradient background */}
       <div className="flex justify-center">
         <div className={`relative w-20 h-20 rounded-full bg-gradient-to-br ${getGradient()} flex items-center justify-center shadow-xl transform transition-transform duration-300 hover:scale-110 hover:rotate-6`}>
@@ -70,7 +70,7 @@ const AwardCard: React.FC<AwardCardProps> = ({
 
       {/* Content */}
       <div className="text-center space-y-3">
-        <h3 className="text-2xl font-bold text-white group-hover:text-pink-400 transition-colors">{title}</h3>
+        <h3 className="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors">{title}</h3>
         <p className="text-base md:text-sm text-gray-300 font-semibold">
           {issuer}
         </p>

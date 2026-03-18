@@ -21,7 +21,7 @@ export default function Home() {
         {name: 'Awards', link: 'awards', icon: <FaTrophy size={30} color="black" />},
       ]}/>
       <Hero/>
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-pink-500/30 via-purple-500/30 to-transparent my-8"></div>
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent my-8"></div>
       <Grid />
       <Quote/>
       {/* Projects Section */}
@@ -33,7 +33,7 @@ export default function Home() {
       
       {/* Experience Section */}
       <Experience />
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-pink-500/30 via-purple-500/30 to-transparent my-8"></div>
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent my-8"></div>
       <Awards />
       <Testimonials/>
       <Footer/>

@@ -32,7 +32,7 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
   return (
     <div
       className={cn(
-        "relative group/bento shadow-input row-span-1 flex rounded-xl items-center p-8 md:p-6 transition shadow-md duration-500 [&>*]:group-hover/bento:translate-x-3 [&_*]:transition [&_*]:duration-400 hover:shadow-purple-500/20 overflow-hidden",
+        "relative group/bento shadow-input row-span-1 flex rounded-xl items-center p-8 md:p-6 transition shadow-md duration-500 [&>*]:group-hover/bento:translate-x-3 [&_*]:transition [&_*]:duration-400 hover:shadow-emerald-500/20 overflow-hidden",
         className
       )}
     >
@@ -43,7 +43,7 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
       )}
       
       {id === 2 && <EmailButton />}
-      {id === 3 && <Vortex baseHue={200} />}
+      {id === 3 && <Vortex baseHue={100} />}
       {id === 6 && <ResumeLink />}
 
       {header}

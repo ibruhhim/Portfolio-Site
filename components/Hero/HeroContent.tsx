@@ -7,7 +7,7 @@ const HeroContent: React.FC = () => {
       <h1 className="text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center">
         <span className="text-white text-6xl">Hi! </span>
         <span className="text-white text-6xl">I&apos;m </span>
-        <span className="text-pink-400 text-8xl">Ibrahim.</span>
+        <span className="text-emerald-400 text-8xl">Ibrahim.</span>
       </h1>
       <p className='text-lg mt-3 text-gray-300'>
         <Typewriter 
@@ -17,7 +17,7 @@ const HeroContent: React.FC = () => {
             'Turning ideas into reality.', 
             'Passionate about technology.'
           ]}
-          className="text-pink-400"
+          className="text-emerald-400"
           typingSpeed={80}
           deletingSpeed={50}
           pauseTime={2000}

@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const subtitle = getProjectSubtitle(icon);
 
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group border-2 border-black flex flex-col h-full hover:border-pink-500 hover:shadow-[0_0_40px_rgba(236,72,153,0.8)] hover:-translate-y-1">
+    <div className="bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group border-2 border-black flex flex-col h-full hover:border-emerald-500 hover:shadow-[0_0_40px_rgba(16,185,129,0.7)] hover:-translate-y-1">
       {/* Icon Header */}
       <div className={`relative h-40 bg-gradient-to-br ${gradient} flex items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
@@ -43,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* Content */}
       <div className="p-4 md:p-6 lg:p-7 flex flex-col flex-1">
         <div className="mb-3 md:mb-4">
-          <h3 className="font-bold text-lg md:text-xl lg:text-2xl text-black mb-1 group-hover:text-purple-600 transition-colors duration-300">
+          <h3 className="font-bold text-lg md:text-xl lg:text-2xl text-black mb-1 group-hover:text-emerald-700 transition-colors duration-300">
             {title}
           </h3>
           <p className="text-sm md:text-xs text-gray-500 font-medium">
@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white text-base md:text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.02]"
+          className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-base md:text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.02]"
         >
           View Project
           <FaExternalLinkAlt size={12} />

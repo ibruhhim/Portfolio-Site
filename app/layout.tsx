@@ -50,8 +50,8 @@ export const metadata: Metadata = {
 
   // 👇 Icons
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.ico",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",

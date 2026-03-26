@@ -23,9 +23,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const subtitle = getProjectSubtitle(icon);
 
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group border-2 border-black flex flex-col h-full hover:border-emerald-500 hover:shadow-[0_0_40px_rgba(16,185,129,0.7)] hover:-translate-y-1">
+    <div className="bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group border-2 border-black flex flex-col h-full hover:border-emerald-700 hover:shadow-[0_0_40px_rgba(5,150,105,0.55)] hover:-translate-y-1">
       {/* Icon Header */}
-      <div className={`relative h-40 bg-gradient-to-br ${gradient} flex items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
+      <div className={`relative h-40 bg-linear-to-br ${gradient} flex items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
         
         {/* Top Right Icon Badge */}
@@ -63,7 +63,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
           <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
             <div 
-              className={`h-full bg-gradient-to-r ${gradient} rounded-full transition-all duration-500`}
+              className={`h-full bg-linear-to-r ${gradient} rounded-full transition-all duration-500`}
               style={{ width: `${progress}%` }}
             ></div>
           </div>
@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-base md:text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.02]"
+          className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold w-full bg-linear-to-r from-emerald-700 to-emerald-900 hover:from-emerald-800 hover:to-emerald-900 text-white text-base md:text-sm transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.02]"
         >
           View Project
           <FaExternalLinkAlt size={12} />

@@ -11,7 +11,7 @@ const aboutGrid = [
     id: 2,
     title: "Let's Connect",
     desc: "Quick! Grab my email.",
-    className: "col-span-1 row-span-1 flex-col cursor-pointer justify-center bg-emerald-600 hover:bg-emerald-700",
+    className: "col-span-1 row-span-1 flex-col cursor-pointer justify-center bg-amber-500 hover:bg-amber-600",
     img: "",
     imgClass: ""
   },

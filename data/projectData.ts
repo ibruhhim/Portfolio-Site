@@ -1,28 +1,28 @@
 const projects = [
   {
-    title: "Online Web Game",
-    url: "https://github.com/ibruhhim/TOD-2-Online-Game",
-    desc: "A turn-based multiplayer Truth or Dare game with custom rounds, ratings, and real-time Socket.io gameplay...",
-    tech: ["Node.js", "Socket.io", "Javascript"],
-    icon: "game",
+    title: "AI Judge",
+    url: "https://github.com/ibruhhim",
+    desc: "Built a full-stack web platform to automate evaluation of written submissions using configurable LLM-based judges and structured scoring pipelines.",
+    tech: ["React", "TypeScript", "TailwindCSS", "Supabase"],
+    icon: "judge",
     progress: 100
   },
   {
-    title: "Path Finding Simulator",
-    url: "https://github.com/ibruhhim/Shortest-Path-Simulator",
-    desc: "A simulator to build maps, place nodes, and visualize shortest-path algorithms with Python and Pygame...",
-    tech: ["Python", "Pygame"],
-    icon: "path",
+    title: "Low-Level Sokoban",
+    url: "https://github.com/ibruhhim",
+    desc: "Implemented a fully playable Sokoban puzzle game entirely in RISCV Assembly, demonstrating instruction-level control flow, memory management, and systems-level debugging.",
+    tech: ["RISCV Assembly", "CPUlator Emulator"],
+    icon: "chip",
     progress: 100
   },
   {
-    title: "Food Delivery App",
-    url: "https://github.com/ibruhhim/food-delivery-app",
-    desc: "A mobile food delivery application built with React Native and Expo, featuring real-time order tracking, restaurant listings, and seamless payment integration...",
-    tech: ["React Native", "Expo", "Tailwind", "Appwrite"],
-    icon: "food",
-    progress: 78
-  },
+    title: "GPS Simulator",
+    url: "https://github.com/ibruhhim",
+    desc: "Engineered a pathfinding simulator to visualize custom node maps and evaluate algorithm effectiveness, with user profiles and route data stored in SQLite.",
+    tech: ["Python", "Pygame", "SQLite", "Matplotlib"],
+    icon: "map",
+    progress: 100
+  }
 ]
 
 

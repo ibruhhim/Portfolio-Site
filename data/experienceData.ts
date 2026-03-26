@@ -1,6 +1,20 @@
 const experiences = [
   {
     id: 1,
+    title: "Software Developer",
+    company: "CrowReport via Riipen",
+    location: "Canada",
+    startDate: "Jan 2026",
+    endDate: "Mar 2026",
+    logo: "/assets/company-logos/crowreport_logo.png",
+    responsibilities: [
+      "Developed frontend UI components in Next.js to present curated media content and improve overall site navigation.",
+      "Implemented RSS feed integration to automatically filter live articles and videos into topic-based subcategories.",
+      "Added admin role functionality by designing a Supabase-backed PostgreSQL schema and custom interface that allowed editors to store, modify, and remove curated article content."
+    ]
+  },
+  {
+    id: 2,
     title: "Frontend UX Engineer",
     company: "University of Toronto",
     location: "Toronto, ON",
@@ -8,15 +22,13 @@ const experiences = [
     endDate: "Mar 2026",
     logo: "/assets/company-logos/uoft_logo.jpg",
     responsibilities: [
-      "Developed and optimized site information structures through detailed sitemaps, user flows, and content model diagrams, improving content clarity and navigation efficiency by an estimated 15-20%.",
-      "Managed and updated structured content using TinaCMS integrated with a CoreData-backed database, ensuring consistency and reliability across university web platforms.",
-      "Implemented and refined front-end components using React and Astro, enhancing responsiveness, design consistency, and user experience across key digital touchpoints.",
-      "Collaborated with developers and content strategists to align information architecture with user needs and editorial workflows, reducing content publishing turnaround times by roughly 20%.",
-      "Assisted in diagnosing and resolving front-end bugs, contributing to improved performance stability and overall user satisfaction."
+      "Developed and optimized site information through detailed sitemaps, user flows, and content model diagrams, improving content clarity and onboarding efficiency by at least 20%.",
+      "Collaborated with developers and content strategists to align information architecture with project needs, reducing content publishing turnaround time.",
+      "Reverse-engineered and mapped the front-end architecture, documenting component interactions and data flows to identify system weaknesses and improve team understanding of the codebase."
     ]
   },
   {
-    id: 2,
+    id: 3,
     title: "Software Engineer Intern",
     company: "Wholeviz",
     location: "San Francisco, CA",
@@ -24,11 +36,9 @@ const experiences = [
     endDate: "Dec 2025",
     logo: "/assets/company-logos/wholeviz_logo.jpg",
     responsibilities: [
-      "Developed and maintained front-end features for a data visualization platform, including data upload workflows, chart rendering components, and interactive user dashboards.",
-      "Built and refined responsive UI elements for the landing page and core product interface, ensuring consistency, scalability, and performance across devices.",
-      "Collaborated with the backend team to integrate user authentication and API endpoints, enabling secure and efficient data processing.",
+      "Developed and maintained front-end features for a data visualization platform, including data upload workflows and interactive user dashboards.",
       "Reorganized front-end project file structure and implemented best practices for code clarity, maintainability, and team collaboration across an 8+ person development team.",
-      "Led efforts to clean up legacy code and standardize component patterns, reducing merge conflicts and improving development velocity by approximately 20%."
+      "Led efforts to clean up the code base and standardize component patterns, reducing merge conflicts and improving development velocity by at least 15%."
     ]
   }
 ];

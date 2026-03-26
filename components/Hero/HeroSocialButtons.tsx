@@ -8,7 +8,7 @@ const HeroSocialButtons: React.FC = () => {
         url="https://github.com/ibruhhim"
         label="Github"
         iconUrl="https://github.com"
-        className="flex items-center border-2 border-emerald-500/50 px-8 py-2 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-emerald-600 hover:border-emerald-600 hover:text-white transition duration-500 cursor-pointer text-white"
+        className="flex items-center border-2 border-emerald-700/60 px-8 py-2 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-emerald-700 hover:border-emerald-700 hover:text-white transition duration-500 cursor-pointer text-white"
       />
       <SocialButton
         url="https://linkedin.com/in/ibrahim-ellahi"

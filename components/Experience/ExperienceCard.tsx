@@ -18,12 +18,11 @@ interface ExperienceCardProps {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) => {
   const isPrimary = index % 2 === 0;
-  const gradient = isPrimary ? 'from-emerald-400 to-emerald-500' : 'from-amber-400 to-amber-500';
-  const borderColor = isPrimary ? 'border-emerald-400' : 'border-amber-400';
-  const hoverBorderColor = isPrimary ? 'hover:border-emerald-500' : 'hover:border-amber-500';
-  const hoverGlow = isPrimary ? 'hover:shadow-[0_0_30px_rgba(16,185,129,0.55)]' : 'hover:shadow-[0_0_30px_rgba(245,158,11,0.55)]';
-  const iconBg = isPrimary ? 'bg-gradient-to-br from-emerald-100 to-emerald-200' : 'bg-gradient-to-br from-amber-100 to-amber-200';
-  const iconBorder = isPrimary ? 'border-emerald-300' : 'border-amber-300';
+  const gradient = isPrimary ? 'from-emerald-600 to-emerald-700' : 'from-amber-500 to-amber-600';
+  const borderColor = isPrimary ? 'border-emerald-600' : 'border-amber-500';
+  const hoverBorderColor = isPrimary ? 'hover:border-emerald-700' : 'hover:border-amber-600';
+  const hoverGlow = isPrimary ? 'hover:shadow-[0_0_30px_rgba(5,150,105,0.5)]' : 'hover:shadow-[0_0_30px_rgba(217,119,6,0.5)]';
+  const iconBg = isPrimary ? 'bg-gradient-to-br from-emerald-100 to-emerald-300' : 'bg-gradient-to-br from-amber-100 to-amber-300';
   const iconColor = isPrimary ? 'text-emerald-700' : 'text-amber-700';
   const calendarColor = isPrimary ? 'text-emerald-600' : 'text-amber-600';
   const locationColor = isPrimary ? 'text-emerald-600' : 'text-amber-600';
@@ -34,13 +33,13 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) =>
   return (
     <div className={`bg-white border-2 ${borderColor} rounded-xl overflow-hidden shadow-md hover:shadow-xl ${hoverBorderColor} ${hoverGlow} transition-all duration-300 hover:-translate-y-1 group`}>
       {/* Gradient accent bar */}
-      <div className={`h-1.5 bg-gradient-to-r ${gradient}`}></div>
+      <div className={`h-1.5 bg-linear-to-r ${gradient}`}></div>
       
       <div className="p-5 md:p-6 lg:p-7">
         <div className="flex gap-4 md:gap-5">
           {/* Company Logo/Icon - LinkedIn style */}
-          <div className="flex-shrink-0">
-            <div className={`w-14 h-14 md:w-16 md:h-16 rounded-lg ${iconBg} flex items-center justify-center border-2 ${iconBorder} overflow-hidden shadow-md group-hover:scale-110 transition-transform duration-300`}>
+          <div className="shrink-0">
+            <div className={`w-14 h-14 md:w-16 md:h-16 rounded-lg ${iconBg} flex items-center justify-center overflow-hidden shadow-md group-hover:scale-110 transition-transform duration-300`}>
               {experience.logo ? (
                 <Image
                   src={experience.logo}
@@ -72,12 +71,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) =>
             {/* Date and Location */}
             <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4 pb-4 border-b border-gray-200">
               <div className={`flex items-center gap-2 text-sm md:text-base font-medium ${isPrimary ? 'text-emerald-700' : 'text-amber-700'}`}>
-                <FaCalendarAlt className={`flex-shrink-0 ${calendarColor}`} size={16} />
+                <FaCalendarAlt className={`shrink-0 ${calendarColor}`} size={16} />
                 <span>{experience.startDate} – {experience.endDate}</span>
               </div>
               <span className={`hidden sm:inline text-lg ${isPrimary ? 'text-emerald-300' : 'text-amber-300'}`}>·</span>
               <div className={`flex items-center gap-2 text-sm md:text-base font-medium ${isPrimary ? 'text-emerald-700' : 'text-amber-700'}`}>
-                <FaMapMarkerAlt className={`flex-shrink-0 ${locationColor}`} size={16} />
+                <FaMapMarkerAlt className={`shrink-0 ${locationColor}`} size={16} />
                 <span>{experience.location}</span>
               </div>
             </div>
@@ -90,7 +89,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) =>
               <ul className="space-y-3">
                 {experience.responsibilities.map((responsibility, idx) => (
                   <li key={idx} className="flex gap-3 text-sm md:text-base text-gray-700 leading-relaxed">
-                    <span className={`${bulletColor} mt-1 flex-shrink-0 font-bold text-lg`}>•</span>
+                    <span className={`${bulletColor} mt-1 shrink-0 font-bold text-lg`}>•</span>
                     <span className="flex-1">{responsibility}</span>
                   </li>
                 ))}

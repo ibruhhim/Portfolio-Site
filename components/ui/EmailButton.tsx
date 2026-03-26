@@ -10,7 +10,7 @@ const EmailButton: React.FC = () => {
 
   return (
     <button
-      className="flex p-4 px-8 h-24 justify-center cursor-pointer items-center rounded-2xl shadow-xl m-5 text-md bg-emerald-600 hover:bg-emerald-700 text-white font-semibold transition-all"
+      className="flex p-4 px-8 h-24 justify-center cursor-pointer items-center rounded-2xl shadow-xl m-5 text-md bg-emerald-700 hover:bg-emerald-800 text-white font-semibold transition-all"
       onClick={handleCopyEmail}
     >
       <FaRegClone className="mr-2" size={15} /> Copy Email

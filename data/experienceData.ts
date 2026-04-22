@@ -1,7 +1,7 @@
 const experiences = [
   {
     id: 1,
-    title: "Software Developer",
+    title: "Software Engineer",
     company: "CrowReport via Riipen",
     location: "Canada",
     startDate: "Jan 2026",
@@ -29,7 +29,7 @@ const experiences = [
   },
   {
     id: 3,
-    title: "Software Engineer Intern",
+    title: "Software Engineer",
     company: "Wholeviz",
     location: "San Francisco, CA",
     startDate: "Sep 2025",

@@ -4,11 +4,11 @@
  */
 
 export const SITE_METADATA = {
-  title: "Ibrahim's Portfolio",
+  title: "My Portfolio",
   description:
     "I'm Ibrahim! My passion is bringing ideas to life through creation and design, which is why I love application development.",
   url: "https://ibrahimellahi.com",
-  siteName: "Ibrahim Ellahi",
+  siteName: "Ibrahim's Portfolio",
   author: "Ibrahim Ellahi",
   keywords: [
     "Ibrahim Ellahi",

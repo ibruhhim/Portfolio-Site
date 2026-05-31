@@ -25,7 +25,7 @@ export default function Home() {
       <Grid />
       <Quote/>
       <div className="w-full bg-islamic-cream py-12 md:py-24 lg:py-32 px-4">
-        <div className="relative w-full max-w-[1400px] mx-auto bg-emerald-950 py-12 md:py-24 lg:py-32 rounded-none md:rounded-3xl overflow-hidden border border-amber-500/20 shadow-xl">
+        <div className="relative w-full max-w-[1400px] mx-auto bg-emerald-950 py-12 md:py-24 lg:py-32 rounded-none md:rounded-3xl overflow-hidden border border-amber-300/25 shadow-xl">
           <IslamicPattern opacity={0.05} />
           <div className="relative z-10">
             <Projects />

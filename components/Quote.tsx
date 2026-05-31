@@ -5,8 +5,8 @@ import quoteImage from '@/public/assets/quote-image.png'
 
 const Quote = () => {
   return (
-    <div className="bg-islamic-parchment w-full py-20 px-6 md:px-12 mb-36 border-y border-amber-500/15">
-      <div className="max-w-4xl mx-auto bg-white/80 rounded-2xl shadow-sm border border-amber-500/10 overflow-hidden flex flex-col md:flex-row">
+    <div className="bg-islamic-parchment w-full py-20 px-6 md:px-12 mb-36 border-y border-amber-300/20">
+      <div className="max-w-4xl mx-auto bg-white/80 rounded-2xl shadow-sm border border-amber-300/15 overflow-hidden flex flex-col md:flex-row">
         <div className="relative w-full md:w-2/5 aspect-[3/2] md:aspect-auto md:self-stretch min-h-48">
           <Image
             src={quoteImage}
@@ -36,7 +36,7 @@ const Quote = () => {
               </div>
             </div>
             <div className="flex justify-end mt-3">
-              <ArabicCalligraphy className="text-4xl md:text-5xl font-bold text-amber-600 leading-none">
+              <ArabicCalligraphy className="text-4xl md:text-5xl font-bold text-amber-300 leading-none">
                 ﴿
               </ArabicCalligraphy>
             </div>

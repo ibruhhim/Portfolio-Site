@@ -17,7 +17,7 @@ const CalligraphyWatermark: React.FC<CalligraphyWatermarkProps> = ({
     >
       <ArabicCalligraphy
         as="div"
-        className="text-[8rem] md:text-[14rem] lg:text-[18rem] font-bold text-amber-400/15 leading-none whitespace-nowrap"
+        className="text-[8rem] md:text-[14rem] lg:text-[18rem] font-bold text-amber-300/15 leading-none whitespace-nowrap"
       >
         {text}
       </ArabicCalligraphy>

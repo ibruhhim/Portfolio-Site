@@ -18,7 +18,7 @@ const IslamicPattern: React.FC<IslamicPatternProps> = ({
       aria-hidden="true"
       style={{
         opacity,
-        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23c9a227' stroke-width='0.6'%3E%3Cpath d='M24 0 L48 24 L24 48 L0 24 Z'/%3E%3Cpath d='M24 8 L40 24 L24 40 L8 24 Z'/%3E%3C/g%3E%3C/svg%3E")`,
+        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23fcd34d' stroke-width='0.6'%3E%3Cpath d='M24 0 L48 24 L24 48 L0 24 Z'/%3E%3Cpath d='M24 8 L40 24 L24 40 L8 24 Z'/%3E%3C/g%3E%3C/svg%3E")`,
         backgroundSize: "48px 48px",
       }}
     />

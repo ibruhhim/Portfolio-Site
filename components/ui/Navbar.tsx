@@ -49,14 +49,14 @@ export const Navbar = ({
   if (!mounted) {
     return (
       <div className={cn(
-        "flex max-w-fit fixed top-6 inset-x-0 mx-auto rounded-full bg-islamic-cream/95 backdrop-blur-lg shadow-lg border border-amber-500/25 z-[5000] px-6 py-3 items-center justify-center gap-6 opacity-0 pointer-events-none",
+        "flex max-w-fit fixed top-6 inset-x-0 mx-auto rounded-full bg-islamic-cream/95 backdrop-blur-lg shadow-lg border border-amber-300/30 z-[5000] px-6 py-3 items-center justify-center gap-6 opacity-0 pointer-events-none",
         className
       )}>
         {navItems.map((navItem, idx) => (
           <button
             key={`link=${idx}`}
             className={cn(
-              "relative items-center flex transition-all duration-300 text-sm text-emerald-900 hover:text-amber-700 font-medium px-3 py-1.5 rounded-full hover:bg-emerald-100/60"
+              "relative items-center flex transition-all duration-300 text-sm text-emerald-900 hover:text-amber-400 font-medium px-3 py-1.5 rounded-full hover:bg-emerald-100/60"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
@@ -82,7 +82,7 @@ export const Navbar = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-6 inset-x-0 mx-auto rounded-full bg-islamic-cream/95 backdrop-blur-lg shadow-lg border border-amber-500/25 z-[5000] px-6 py-3 items-center justify-center gap-6",
+          "flex max-w-fit fixed top-6 inset-x-0 mx-auto rounded-full bg-islamic-cream/95 backdrop-blur-lg shadow-lg border border-amber-300/30 z-[5000] px-6 py-3 items-center justify-center gap-6",
           className
         )}
       >
@@ -97,7 +97,7 @@ export const Navbar = ({
             }
           }}
           className={cn(
-            "relative items-center flex transition-all duration-300 text-sm text-emerald-900 hover:text-amber-700 font-medium px-3 py-1.5 rounded-full hover:bg-emerald-100/60"
+            "relative items-center flex transition-all duration-300 text-sm text-emerald-900 hover:text-amber-400 font-medium px-3 py-1.5 rounded-full hover:bg-emerald-100/60"
           )}
   >
             <span className="block sm:hidden">{navItem.icon}</span>

@@ -19,12 +19,12 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="relative bg-emerald-950 border-t border-amber-500/20 w-full py-16 overflow-hidden">
+    <footer className="relative bg-emerald-950 border-t border-amber-300/20 w-full py-16 overflow-hidden">
       <IslamicPattern opacity={0.04} />
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 className="font-display text-lg font-bold mb-4 text-amber-400">About</h3>
+            <h3 className="font-display text-lg font-bold mb-4 text-amber-300">About</h3>
             <p className="text-gray-300 text-base md:text-sm leading-relaxed mb-4">
               I&apos;m Ibrahim, a Computer Science student at the University of Toronto with a focus on full-stack and frontend development.
             </p>
@@ -35,8 +35,8 @@ const Footer = () => {
           <FooterLinks />
           <FooterContact />
         </div>
-        <div className="border-t border-amber-500/15 pt-8">
-          <ArabicCalligraphy className="block text-center text-xl md:text-2xl text-amber-400/70 mb-6">
+        <div className="border-t border-amber-300/15 pt-8">
+          <ArabicCalligraphy className="block text-center text-xl md:text-2xl text-amber-300/80 mb-6">
             جَزَاكَ ٱللَّٰهُ خَيْرًا
           </ArabicCalligraphy>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">

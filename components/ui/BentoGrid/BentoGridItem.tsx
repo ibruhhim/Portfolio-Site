@@ -32,7 +32,10 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
   return (
     <div
       className={cn(
-        "relative group/bento row-span-1 flex rounded-xl items-center p-8 md:p-6 transition duration-300 shadow-md hover:shadow-lg hover:shadow-emerald-500/20 overflow-hidden",
+        "relative group/bento row-span-1 flex rounded-xl items-center p-8 md:p-6 overflow-hidden",
+        "transition-all duration-500 ease-out shadow-md",
+        "hover:shadow-xl hover:shadow-amber-300/20 hover:-translate-y-1 hover:border-amber-300/40",
+        "*:group-hover/bento:translate-x-2 **:transition-transform **:duration-400",
         className
       )}
     >
@@ -50,7 +53,7 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
       <div className="relative z-10 flex flex-col text-wrap justify-center">
         {icon}
         <div className={cn("flex mt-2 mb-2 font-display text-2xl md:text-xl font-bold text-white", id === 5 && "text-4xl md:text-3xl")}>
-          {title} {id === 5 && <FaCanadianMapleLeaf className="ml-2 text-amber-400" size={40} />}
+          {title} {id === 5 && <FaCanadianMapleLeaf className="ml-2 text-amber-300" size={40} />}
         </div>
         <div className={cn("font-sans text-base md:text-sm font-normal text-gray-200", id === 5 && "text-lg md:text-md")}>
           {description}

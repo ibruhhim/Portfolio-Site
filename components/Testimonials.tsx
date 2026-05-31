@@ -20,7 +20,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="relative bg-emerald-950 w-full py-20 border-t border-amber-500/15 overflow-hidden">
+    <div className="relative bg-emerald-950 w-full py-20 border-t border-amber-300/20 overflow-hidden">
       <IslamicPattern opacity={0.04} />
       <div className="relative mx-auto max-w-sm px-4 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
         <SectionHeading

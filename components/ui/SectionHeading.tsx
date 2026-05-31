@@ -26,7 +26,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
           as="p"
           className={cn(
             "text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-relaxed",
-            isLight ? "text-amber-600" : "text-amber-400"
+            isLight ? "text-amber-400" : "text-amber-300"
           )}
         >
           {arabicTitle}
@@ -53,7 +53,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
       <div
         className={cn(
           "mt-6 h-px w-24 mx-auto bg-linear-to-r from-transparent to-transparent",
-          isLight ? "via-amber-500/60" : "via-amber-400/50"
+          isLight ? "via-amber-300/60" : "via-amber-300/50"
         )}
       />
     </div>

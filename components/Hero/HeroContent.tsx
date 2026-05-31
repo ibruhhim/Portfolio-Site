@@ -4,10 +4,10 @@ import ArabicCalligraphy from '../ui/ArabicCalligraphy';
 
 const HeroContent: React.FC = () => {
   return (
-    <div className="relative z-10 flex flex-col items-center text-center px-2 sm:px-4 w-full">
+    <div className="relative z-10 flex flex-col items-center text-center px-2 sm:px-4 w-full min-w-0">
       <ArabicCalligraphy
         as="p"
-        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-amber-300 font-bold drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)] mb-6 sm:mb-8 md:mb-12"
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl text-amber-300 font-bold drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)] mb-6 sm:mb-8 md:mb-12 w-full text-center leading-none"
       >
         ﷽
       </ArabicCalligraphy>

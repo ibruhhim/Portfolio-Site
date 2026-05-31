@@ -11,13 +11,13 @@ const FooterLinks: React.FC = () => {
 
   return (
     <div>
-      <h3 className="text-lg font-bold mb-4 text-black">Quick Links</h3>
+      <h3 className="font-display text-lg font-bold mb-4 text-amber-400">Quick Links</h3>
       <ul className="space-y-3">
         {links.map((link) => (
           <li key={link.name}>
-            <a 
-              href={link.href} 
-              className="text-gray-600 hover:text-emerald-700 transition-colors text-base md:text-sm font-medium"
+            <a
+              href={link.href}
+              className="text-gray-300 hover:text-amber-400 transition-colors text-base md:text-sm font-medium"
             >
               {link.name}
             </a>

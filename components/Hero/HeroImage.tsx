@@ -4,13 +4,15 @@ import pfp from "@/public/assets/pfp.png";
 
 const HeroImage: React.FC = () => {
   return (
-    <div className='relative w-80 h-80 shadow-[0_0_30px_rgba(16,185,129,0.35)] rounded-full'>
-      <div className='absolute w-80 h-80 right-10 border-2 border-emerald-700 rounded-full overflow-hidden flex justify-self-center items-center bg-black p-2'>
-        <div className='w-full h-full rounded-full overflow-hidden'>
+    <div className="relative w-80 h-80">
+      <div className="absolute inset-0 rounded-full border-2 border-amber-500/35 shadow-[0_0_40px_rgba(201,162,39,0.2)]" />
+      <div className="absolute inset-2 rounded-full border border-emerald-600/50" />
+      <div className="absolute w-72 h-72 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden bg-emerald-950 p-1.5 shadow-[0_0_30px_rgba(5,150,105,0.3)]">
+        <div className="w-full h-full rounded-full overflow-hidden ring-2 ring-amber-500/25">
           <Image
             src={pfp}
             alt="My Photo"
-            className='object-cover w-full h-full scale-150'
+            className="object-cover object-center w-full h-full scale-125 brightness-110"
           />
         </div>
       </div>
@@ -19,4 +21,3 @@ const HeroImage: React.FC = () => {
 };
 
 export default HeroImage;
-

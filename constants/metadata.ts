@@ -35,6 +35,6 @@ export const SITE_METADATA = {
     card: "summary_large_image" as const,
     creator: "@yourtwitterhandle", // replace with your actual handle if you have one
   },
-  themeColor: "#0f172a",
+  themeColor: "#0c1a14",
 };
 

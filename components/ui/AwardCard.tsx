@@ -57,10 +57,10 @@ const AwardCard: React.FC<AwardCardProps> = ({
   };
 
   return (
-    <div className={`bg-black border-2 ${getBorderColor()} flex flex-col gap-6 text-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 w-full sm:max-w-sm hover:-translate-y-2 hover:border-emerald-500/50 ${getHoverGlow()}`}>
+    <div className={`bg-emerald-950 border-2 ${getBorderColor()} flex flex-col gap-6 text-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 w-full sm:max-w-sm hover:-translate-y-2 hover:border-amber-500/40 ${getHoverGlow()}`}>
       {/* Icon with gradient background */}
       <div className="flex justify-center">
-        <div className={`relative w-20 h-20 rounded-full bg-gradient-to-br ${getGradient()} flex items-center justify-center shadow-xl transform transition-transform duration-300 hover:scale-110 hover:rotate-6`}>
+        <div className={`relative w-20 h-20 rounded-full bg-linear-to-br ${getGradient()} flex items-center justify-center shadow-xl transform transition-transform duration-300 hover:scale-110 hover:rotate-6 ring-2 ring-amber-400/30`}>
           <div className="absolute inset-0 rounded-full bg-white/20 backdrop-blur-sm"></div>
           <div className="relative z-10 text-white transform scale-125">
             {icon}
@@ -70,11 +70,11 @@ const AwardCard: React.FC<AwardCardProps> = ({
 
       {/* Content */}
       <div className="text-center space-y-3">
-        <h3 className="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors">{title}</h3>
+        <h3 className="font-display text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors">{title}</h3>
         <p className="text-base md:text-sm text-gray-300 font-semibold">
           {issuer}
         </p>
-        <div className={`inline-block px-4 py-1.5 rounded-full bg-gradient-to-r ${getGradient()} text-white text-sm md:text-xs font-bold uppercase tracking-wider shadow-md`}>
+        <div className={`inline-block px-4 py-1.5 rounded-full bg-linear-to-r ${getGradient()} text-white text-sm md:text-xs font-bold uppercase tracking-wider shadow-md`}>
           {year}
         </div>
       </div>

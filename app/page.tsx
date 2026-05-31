@@ -8,32 +8,31 @@ import Awards from "@/components/Awards";
 import Testimonials from "@/components/Testimonials";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
+import IslamicPattern from "@/components/ui/IslamicPattern";
 
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center flex-col overflow-hidden bg-white" >
+    <main className="flex justify-center items-center flex-col overflow-hidden bg-islamic-cream">
       <Navbar navItems={[
-        {name: 'Home', link: 'hero', icon: <FaHome size={30} color="black" />},
-        {name: 'About', link: 'about', icon: <FaUser size={30} color="black" />},
-        {name: 'Experience', link: 'experience', icon: <FaBriefcase size={30} color="black" />},
-        {name: 'Projects', link: 'projects', icon: <FaLaptopCode size={30} color="black" />},
-        {name: 'Awards', link: 'awards', icon: <FaTrophy size={30} color="black" />},
+        {name: 'Home', link: 'hero', icon: <FaHome size={30} color="#065f46" />},
+        {name: 'About', link: 'about', icon: <FaUser size={30} color="#065f46" />},
+        {name: 'Experience', link: 'experience', icon: <FaBriefcase size={30} color="#065f46" />},
+        {name: 'Projects', link: 'projects', icon: <FaLaptopCode size={30} color="#065f46" />},
+        {name: 'Awards', link: 'awards', icon: <FaTrophy size={30} color="#065f46" />},
       ]}/>
       <Hero/>
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent my-8"></div>
       <Grid />
       <Quote/>
-      {/* Projects Section */}
-      <div className="w-full bg-white py-12 md:py-24 lg:py-32">
-        <div className="w-full max-w-[1400px] mx-auto bg-black py-12 md:py-24 lg:py-32 rounded-none md:rounded-3xl">
-          <Projects />
+      <div className="w-full bg-islamic-cream py-12 md:py-24 lg:py-32 px-4">
+        <div className="relative w-full max-w-[1400px] mx-auto bg-emerald-950 py-12 md:py-24 lg:py-32 rounded-none md:rounded-3xl overflow-hidden border border-amber-500/20 shadow-xl">
+          <IslamicPattern opacity={0.05} />
+          <div className="relative z-10">
+            <Projects />
+          </div>
         </div>
       </div>
-      
-      {/* Experience Section */}
       <Experience />
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent my-8"></div>
       <Awards />
       <Testimonials/>
       <Footer/>

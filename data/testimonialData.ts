@@ -11,7 +11,7 @@
       quote:
         "Ibrahim has been an integral part of my project team. He's dependable, brings a great energy to the work, and consistently follows through on his commitments.",
       name: "Zain Ghias",
-      designation: "Frontend Intern @ Quor",
+      designation: "Data Analyst @ Cogeco",
       src: "/assets/zain.jpg",
       site: "https://www.linkedin.com/in/zain-ghias/"
     },
@@ -27,8 +27,8 @@
       quote:
         "Ibrahim has an exceptional work ethic and a real talent for breaking down complex concepts into simple, easy-to-understand explanations. Working with him has always been seamless.",
       name: "Shaheer Imran",
-      designation: "Software Intern @ RazisSol",
-      src: "/assets/shaheer.jpg",
+      designation: "Software Intern @ Ericsson",
+      src: "/assets/shaheer.png",
       site: "https://www.linkedin.com/in/shaheer-imran-/"
     },
   ];

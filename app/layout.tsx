@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SITE_METADATA } from "@/constants/metadata";
+import { amiri } from "@/constants/fonts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -72,7 +73,7 @@ export default function RootLayout({
       className="max-sm:text-[12px] max-md:text-[14px] max-lg:text-[16px]"
     >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased m-0 p-0`}
+        className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} antialiased m-0 p-0 bg-islamic-cream text-gray-900`}
       >
         {children}
       </body>

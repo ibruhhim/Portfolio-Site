@@ -11,7 +11,7 @@ const aboutGrid = [
     id: 2,
     title: "Let's Connect",
     desc: "Quick! Grab my email.",
-    className: "col-span-1 row-span-1 flex-col cursor-pointer justify-center bg-amber-500 hover:bg-amber-600",
+    className: "col-span-1 row-span-1 flex-col cursor-pointer justify-center bg-amber-600 hover:bg-amber-700 border-amber-400/30",
     img: "",
     imgClass: ""
   },
@@ -43,7 +43,7 @@ const aboutGrid = [
     id: 6,
     title: "Resume",
     desc: "View or download my resume to see my experience and skills in detail.",
-    className: "col-span-1 lg:col-span-2 row-span-1 cursor-pointer flex-col lg:flex-row justify-evenly bg-black",
+    className: "col-span-1 lg:col-span-2 row-span-1 cursor-pointer flex-col lg:flex-row justify-evenly",
     img: "",
     imgClass: ""
   }

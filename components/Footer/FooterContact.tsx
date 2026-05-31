@@ -22,7 +22,7 @@ const FooterContact: React.FC = () => {
 
   return (
     <div>
-      <h3 className="text-lg font-bold mb-4 text-black">Connect</h3>
+      <h3 className="font-display text-lg font-bold mb-4 text-amber-400">Connect</h3>
       <div className="flex flex-col gap-3">
         {contacts.map((contact) => (
           <a
@@ -30,7 +30,7 @@ const FooterContact: React.FC = () => {
             href={contact.href}
             target={contact.href.startsWith('mailto:') ? undefined : "_blank"}
             rel={contact.href.startsWith('mailto:') ? undefined : "noopener noreferrer"}
-            className="flex items-center text-gray-600 hover:text-emerald-700 transition-colors text-base md:text-sm font-medium"
+            className="flex items-center text-gray-300 hover:text-amber-400 transition-colors text-base md:text-sm font-medium"
           >
             {contact.icon}
             {contact.label}

@@ -8,17 +8,16 @@ const HeroSocialButtons: React.FC = () => {
         url="https://github.com/ibruhhim"
         label="Github"
         iconUrl="https://github.com"
-        className="flex items-center border-2 border-emerald-700/60 px-8 py-2 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-emerald-700 hover:border-emerald-700 hover:text-white transition duration-500 cursor-pointer text-white"
+        className="flex items-center border-2 border-emerald-600/80 px-8 py-2 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-emerald-800 hover:border-emerald-500 text-white transition duration-500 cursor-pointer"
       />
       <SocialButton
         url="https://linkedin.com/in/ibrahim-ellahi"
         label="LinkedIn"
         iconUrl="https://linkedin.com"
-        className="flex items-center border-2 border-white px-10 py-2 rounded-full tracking-widest uppercase font-bold bg-white text-black hover:bg-amber-500 hover:border-amber-500 hover:text-black transition duration-500 cursor-pointer"
+        className="flex items-center border-2 border-amber-500 px-10 py-2 rounded-full tracking-widest uppercase font-bold bg-amber-500/15 text-amber-50 hover:bg-amber-600 hover:border-amber-400 hover:text-white transition duration-500 cursor-pointer"
       />
     </div>
   );
 };
 
 export default HeroSocialButtons;
-

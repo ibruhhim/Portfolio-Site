@@ -18,8 +18,7 @@ export interface Experience {
   location: string;
   startDate: string;
   endDate: string;
-  responsibilities: string[];
-  logo?: string; // Optional path to company logo image
+  logo?: string;
 }
 
 export interface Award {

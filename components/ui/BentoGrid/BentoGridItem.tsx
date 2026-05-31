@@ -32,27 +32,27 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
   return (
     <div
       className={cn(
-        "relative group/bento shadow-input row-span-1 flex rounded-xl items-center p-8 md:p-6 transition shadow-md duration-500 [&>*]:group-hover/bento:translate-x-3 [&_*]:transition [&_*]:duration-400 hover:shadow-emerald-500/20 overflow-hidden",
+        "relative group/bento row-span-1 flex rounded-xl items-center p-8 md:p-6 transition duration-300 shadow-md hover:shadow-lg hover:shadow-emerald-500/20 overflow-hidden",
         className
       )}
     >
       {img && (
-        <div className={cn("absolute left-0 rounded-xl w-full overflow-hidden", imgClass)}>
-          <img src={img} alt={String(img)} className="object-cover object-center w-full" />
+        <div className={cn("absolute left-0 rounded-xl w-full overflow-hidden pointer-events-none", imgClass)}>
+          <img src={img} alt="" className="object-cover object-center w-full" />
         </div>
       )}
-      
+
       {id === 2 && <EmailButton />}
       {id === 3 && <Vortex baseHue={100} />}
       {id === 6 && <ResumeLink />}
 
       {header}
-      <div className="flex flex-col z-10 text-wrap justify-center">
+      <div className="relative z-10 flex flex-col text-wrap justify-center">
         {icon}
-        <div className={cn("flex mt-2 mb-2 font-sans text-2xl md:text-xl font-bold", id === 5 && "text-4xl md:text-3xl")}>
-          {title} {id === 5 && <FaCanadianMapleLeaf className="ml-2" size={40} />}
+        <div className={cn("flex mt-2 mb-2 font-display text-2xl md:text-xl font-bold text-white", id === 5 && "text-4xl md:text-3xl")}>
+          {title} {id === 5 && <FaCanadianMapleLeaf className="ml-2 text-amber-400" size={40} />}
         </div>
-        <div className={cn("font-sans text-base md:text-sm font-normal", id === 5 && "text-lg md:text-md")}>
+        <div className={cn("font-sans text-base md:text-sm font-normal text-gray-200", id === 5 && "text-lg md:text-md")}>
           {description}
         </div>
       </div>
@@ -61,4 +61,3 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
     </div>
   );
 };
-

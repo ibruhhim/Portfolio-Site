@@ -7,11 +7,47 @@ html {
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
 
+  --color-islamic-cream: #f8f4eb;
+  --color-islamic-parchment: #f0e9dc;
+  --color-islamic-night: #0c1a14;
+  --color-islamic-emerald: #065f46;
+  --color-islamic-gold: #c9a227;
+
+  --font-display: var(--font-amiri), Georgia, "Times New Roman", serif;
+
   @keyframes scroll {
     to {
       transform: translate(calc(-50% - 0.5rem));
     }
   }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.arabic-calligraphy {
+  font-family: var(--font-amiri), "Amiri", "Noto Naskh Arabic", serif;
+  font-feature-settings: "liga" 1;
+  letter-spacing: 0;
+  unicode-bidi: isolate;
+}
+
+.islamic-gradient-hero {
+  background: linear-gradient(
+    165deg,
+    #0c1a14 0%,
+    #0f2922 40%,
+    #134e3a 75%,
+    #0c1a14 100%
+  );
+}
+
+.section-label {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 @keyframes pulse-slow {
